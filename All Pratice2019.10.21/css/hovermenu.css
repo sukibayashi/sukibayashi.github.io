@@ -33,7 +33,7 @@ nav .menulist ul{
     list-style-type: none;
     display:flex;
     color:white;
-    padding:5px 5px
+    padding:5px 0px
 }
 
 nav .menulist ul li{
@@ -122,8 +122,9 @@ nav .menulist ul li a:hover{
     display:none;
     color:white;
     position: relative;
-    left: calc(50% - 40px);
-    top: calc(50% - 20px);
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
     background-color: rgb(87, 84, 84);
     display: inline-block;
     text-align: center;
