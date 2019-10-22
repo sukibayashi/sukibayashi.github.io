@@ -23,7 +23,7 @@ nav .logo{
     width:50px;
     height:50px;
     margin-top:5px;
-    margin-right:700px;
+    margin-left:10px;
     background-color:red;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Pakistan_%28orthographic_projection%29.svg/2000px-Pakistan_%28orthographic_projection%29.svg.png');
     background-size: contain;
@@ -154,7 +154,7 @@ nav .menulist ul li a:hover{
     border-color: black;
     border-width: 1px 1px 0px 1px;
     background-image: url('https://cdn.pixabay.com/photo/2018/04/12/21/10/cube-3314811_960_720.jpg');
-    background-repeat: no-repeat;
+
     background-size: cover;
 }
 .cardtext1{
@@ -182,7 +182,7 @@ nav .menulist ul li a:hover{
     border-color: black;
     border-width: 1px 1px 0px 1px;
     background-image: url('https://images.pexels.com/photos/972161/pexels-photo-972161.jpeg?cs=srgb&dl=video-game-972161.jpg&fm=jpg');
-    background-repeat: no-repeat;
+
     background-size: cover;
 }
 .cardtext2{
@@ -210,7 +210,7 @@ nav .menulist ul li a:hover{
     border-color: black;
     border-width: 1px 1px 0px 1px;
     background-image: url('https://c.pxhere.com/images/35/f9/caac168bb583ece977706a5c00df-1446043.jpg!d');
-    background-repeat: no-repeat;
+
     background-size: cover;
 }
 .cardtext3{
@@ -272,6 +272,7 @@ footer{
         left: -30px;
         top: 44px;
         color:white;
+        align-items: center;
         padding: 0px 0px;
         background-color: rgba(177, 167, 167, 0.445);
     }
@@ -279,7 +280,7 @@ footer{
         padding: 5px 0px;
     }
     nav .menulist ul li a{
-        padding: 1px 30px;
+        padding: 7px 30px;
     }
     /* nav */
 
@@ -292,7 +293,9 @@ footer{
         order:2;
         margin:0;
         width:calc(100%);
-        border:0px
+    }
+    #page_1 .page1image:hover{
+        background-position:0px -90px;
     }
 
     #page_1 .page1text{
