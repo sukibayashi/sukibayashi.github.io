@@ -1,0 +1,353 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding:0;
+}
+
+.web {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.navbar {
+  width: 320px;
+  height: 100vh;
+  background-color: rgb(102, 85, 85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav{
+  width: 320px;
+  height: 100vh;
+}
+
+.navbar nav .logo {
+  width: 120px;
+  height: 120px;
+  background-image: url("https://live.staticflickr.com/2480/3712457083_390a8a5ef4_b.jpg");
+  background-size: cover;
+  margin-left: 140px;
+  margin-top:200px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  width:100%
+}
+
+nav ul li{
+  margin: 40px 90px;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  width:100%;
+  padding:20px 65px;
+  color: white;
+  line-height: 40px;
+  font-family: "Work Sans", sans-serif;
+}
+
+nav ul li a:hover {
+  width:320px;
+  background-color: rgb(73, 64, 64);
+  transition: 0.5s;
+}
+
+
+main {
+  width: calc(100% - 320px);
+  height: 100vh;
+  background-color: rgba(136, 129, 143, 0.329);
+}
+
+main .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  overflow: hidden;
+}
+.mask1{
+  display:none;
+  height:100%;
+  background-color: rgba(48, 48, 48, 0.342);
+  color:white;
+  font-size:40px;
+}
+.font1{
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+}
+main .img1:hover .mask1{
+  display:flex;
+  transition:all 0.5s ease 0s
+}
+
+main .imgmove {
+  display: flex;
+}
+main .img1 {
+  width: 260px;
+  height: 600px;
+  background-image: url("https://media.fshoq.com/images/151/eiffel-tower-in-paris-151-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -260px 0px;
+}
+main .img1:hover {
+  transform: scale(1.1);
+  transition:all 0.5s ease 0s
+}
+
+
+main .img2 {
+  width: 260px;
+  height: 600px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -100px 0px;
+}
+main .img2:hover {
+  transform: scale(1.1);
+  transition:all 0.5s ease 0s
+}
+.mask2{
+  display:none;
+  height:100%;
+  background-color: rgba(48, 48, 48, 0.342);
+  color:white;
+  font-size:40px;
+}
+.font2{
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+}
+main .img2:hover .mask2{
+  display:flex;
+  transition:all 0.5s ease 0s
+}
+
+main .img3 {
+  width: 260px;
+  height: 600px;
+  background-image: url("https://storage.needpix.com/rsynced_images/big-ben-2605315_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -120px 0px;
+}
+main .img3:hover {
+  transform: scale(1.1);
+  transition:all 0.5s ease 0s
+}
+.mask3{
+  display:none;
+  height:100%;
+  background-color: rgba(48, 48, 48, 0.342);
+  color:white;
+  font-size:40px;
+}
+.font3{
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+}
+main .img3:hover .mask3{
+  display:flex;
+  transition:all 0.5s ease 0s
+}
+
+@media screen and (max-width: 1280px) {
+  main .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  main .img1 {
+    width: 600px;
+    height: 600px;
+    background-position: -34px 0px;
+  }
+
+  main .imgmove {
+    width:600px;
+    height:300px;
+  }
+  main .img2 {
+    width: 50%;
+    height: 100%;
+  }
+  main .img3 {
+    width: 50%;
+    height: 100%;
+    background-position: 0px 0px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .web{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 100px;
+  }
+
+  nav{
+    width:100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar nav .logo {
+    width: 90px;
+    height: 90px;
+    margin:0 ;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li{
+    margin: 0;
+  } 
+  nav ul li a {
+    text-decoration: none;
+    width:100%;
+    padding:40px 50px;
+  }
+
+  main {
+    width:100%;
+    height:calc(100vh - 100px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .img {
+    height:calc(100vh - 100px);
+    overflow: hidden;
+  }
+
+  main .img1{
+    transition: all 1s
+  }
+  main .img2{
+    transition: all 1s
+  }
+  main .img3{
+    transition: all 1s
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    height:70px
+  }
+  .navbar nav .logo {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+  }
+
+  .navselect{
+    display:flex;
+    flex-direction: column;
+    width:30px;
+    height:30px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2000px-Hamburger_icon.svg.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    position: absolute;
+    top: calc(5vh - 5px);
+    left:45px
+  }
+
+  nav ul {
+    display:none;
+    flex-direction: column;
+    width:90px;
+    align-items: center;  
+    position: absolute;
+    float: right;
+    top: calc(5vh - 10px);
+    left: -30px;
+    top:30px;
+    padding:2px;
+    border-radius: 10px;
+    background-color:rgba(172, 164, 164, 0.623);
+  }
+
+  nav ul li{
+    padding:0px
+  }
+  nav ul li a{
+    padding:0px
+  }
+  .navselect:hover ul {
+    display:flex;
+  }
+
+  main{
+    height:calc(100vh - 70px)
+  }
+  main .img{
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%
+  }
+
+  main .img1{
+    height:33%;
+    width: 100%;
+    background-position: 0px -30px;
+  }
+  main .imgmove{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:67%;
+    width:100%
+  }
+  main .img2{
+    width:100%;
+    background-position: 0px 0px;
+  }
+  main .img3{
+    width:100%;
+    background-position: 0px 0px;
+  }
+
+
+}
