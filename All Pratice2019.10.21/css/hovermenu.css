@@ -23,7 +23,7 @@ nav .logo{
     width:50px;
     height:50px;
     margin-top:5px;
-    margin-left:calc(50% - 300px);
+    margin-right:700px;
     background-color:red;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Pakistan_%28orthographic_projection%29.svg/2000px-Pakistan_%28orthographic_projection%29.svg.png');
     background-size: contain;
