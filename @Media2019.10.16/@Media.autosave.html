@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin:0 auto;
+        }
+
+        .all{
+            width: 100%;
+            height:100vh;
+        }
+
+        .navbar{
+            width:320px;
+            height:100vh;
+            background-color:rgb(086, 068, 098);
+            float:left;
+            padding-top:calc(50vh - 300px)
+            
+        }
+
+        .navbar .logo{
+            width:150px;
+            height:150px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTf_-MQBxAtRtf1CF5CBC0ZCCINvdgi9oZ3w3HoKTnTo3KQHswNg');
+            background-size: cover;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .navbar .list {
+            display: inline;
+
+        }
+        .navbar .list ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            padding-top:20px ;
+        }
+        .navbar .list ul li{
+            padding: 15px 0px
+        }
+        .navbar .list ul li a{
+            font-size: 30px;
+            color:white;
+            text-decoration-line:none;
+            padding:15px 122px
+        }
+
+        .navbar .list ul li:hover{
+            background-color:rgb(61, 48, 70);
+        }
+
+
+        main{
+            width:calc(100% - 320px);
+            height:100vh;
+            background-color:rgb(250, 220, 224);
+            float:right;
+            padding-top:calc(50vh - 300px)
+        }
+
+        .img{
+            width:800px;
+            height:600px;
+            background-color: violet;
+            margin-left: auto;
+            margin-right:auto;   
+        }
+        .img1{
+            width:33%;
+            height: 100%;
+            background-image: url('https://live.staticflickr.com/4044/4587863205_40e9f627a0_b.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -140px 0px;
+            float: left;
+            overflow:hidden
+        }
+
+        .mask1{
+            display: none;
+            width:100%;
+            height:100%;
+            background-color: rgba(34, 28, 28, 0.288);
+        }
+
+        .mask1 .font {
+            color:white;
+            position: relative;
+            font-size: 40px;
+            padding:260px 90px
+        }
+        .img1:hover .mask1{
+            display:block
+        }
+        .img1:hover{
+            background-image: url('https://cdn.pixabay.com/photo/2018/05/25/14/39/fushimi-inari-shrine-3429259_960_720.jpg');
+            background-position: -100px 0px;
+            transform: scale(1.1);
+            transition:all 0.6s
+        }
+        
+        .img2{
+            width:34%;
+            height: 100%;
+            background-image: url('https://live.staticflickr.com/4259/34732898590_ad333492db_k.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -420px 0px;
+            float: left;
+            overflow:hidden
+        }
+
+        .mask2{
+            display: none;
+            width:100%;
+            height:100%;
+            background-color: rgba(34, 28, 28, 0.288);
+        }
+
+        .mask2 .font {
+            color:white;
+            position: relative;
+            font-size: 40px;
+            padding:260px 90px
+        }
+        .img2:hover .mask2{
+            display:block
+        }
+        .img2:hover{
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Colorful_neon_street_signs_in_Kabukich%C5%8D%2C_Shinjuku%2C_Tokyo.jpg/800px-Colorful_neon_street_signs_in_Kabukich%C5%8D%2C_Shinjuku%2C_Tokyo.jpg');
+            background-position: -320px 0px;
+            transform: scale(1.1);
+            transition:all 0.6s
+        }
+
+        .img3{
+            width:33%;
+            height: 100%;
+            background-image: url('https://storage.needpix.com/rsynced_images/matcha-2356774_1280.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -240px 0px;
+            float:right;
+            overflow:hidden
+        }
+        .mask3{
+            display: none;
+            width:100%;
+            height:100%;
+            background-color: rgba(34, 28, 28, 0.288);
+        }
+
+        .mask3 .font {
+            color:white;
+            position: relative;
+            font-size: 40px;
+            padding:260px 90px
+        }
+        .img3:hover .mask3{
+            display:block
+        }
+        .img3:hover{
+            background-image: url('https://www.goodfreephotos.com/albums/japan/osaka/osaka-castle-japan.jpg');
+            background-position: -240px 0px;
+            transform: scale(1.1);
+            transition:all 0.6s
+        }
+
+    @media screen and (max-width:1280px) {
+        .img1{
+            width:100%;
+            height:50%;
+            background-position: 0px 0px;   
+        }
+        .mask1 .font {
+            padding:130px 600px;
+        }
+        .img1:hover{
+            background-position: 0px -50px;
+        }
+
+        .img2{
+            width:50%;
+            height:50%;
+            background-position: 0px 0px;
+        }
+        .mask2 .font {
+            padding:120px 140px
+        }
+
+        .img2:hover{
+            background-position: -50px 0px;
+        }
+
+        .img3{
+            width:50%;
+            height:50%;
+            background-position: -50px 0px;
+        }
+        .mask3 .font {
+            padding:120px 150px
+        }
+
+        .img3:hover{
+            background-position: 0px 0px;
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        .navbar{
+            width:100%;
+            height:100px;
+            padding:5px;           
+        }
+
+        .navbar .logo{
+            width:90px;
+            height:90px;
+            margin-left:30px;
+            float:left;
+        }
+
+        .navbar .list {
+            float:right;
+
+        }
+        .navbar .list ul{
+            padding:0px ;
+        }
+        .navbar .list ul li{
+            padding: 25px 6px;
+            float:left;
+        }
+        .navbar .list ul li a{
+            padding: 30px 10px;
+        }
+
+        main{
+            width:100%;
+            height:calc(100vh - 100px);
+        }
+
+        .img{
+            width: 700px;
+            height:600px;
+        }
+
+        .mask1 .font {
+            padding:130px 500px;
+        }
+        .mask2 .font {
+            padding:120px 120px
+        }
+        .mask3 .font {
+            padding:120px 120px
+        }
+    }
+
+    @media screen and (max-width: 376px){
+        .navbar{
+            width:100%;
+            height:60px;
+            padding:5px;           
+        }
+
+        .navbar .logo{
+            width: 50px;
+            height: 50px;
+            margin-left: auto;
+            margin-right:auto;
+            float:none;
+        }
+        main{
+            width:100%;
+            height:calc(100vh - 60px);
+            background-color:rgb(250, 220, 224);
+            float:right;
+            padding-top:0px;
+        }
+
+        .img{
+            width: 100%;
+            height:100%;
+            margin:0;
+        }
+
+        .img1{
+            height:33%
+        }
+        .img1:hover{
+            background-position: 0px 0px;
+            transform: scale(1.0);
+        }
+        .img2{
+            height:34%;
+            width:100%;
+            float:none;
+        }
+        .img2:hover{
+            background-position: 0px 0px;
+            transform: scale(1.0);
+        }
+        .img3{
+            width:100%;
+            height:33%;
+            float:none;
+            background-position: 0px -40px;
+        }
+        .img3:hover{
+            background-position: 0px -30px;
+            transform: scale(1.0);
+        }
+
+        
+        .mask1 .font {
+            padding:70px 130px;
+        }
+        .mask2 .font {
+            padding:70px 130px;
+        }
+        .mask3 .font {
+            padding:70px 130px;
+        }
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="navbar">
+            <div class="logo"></div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="#section_1">Kyoto</a>
+                    </li>
+                    <li><a href="#section_2">Tokyo</a>
+                    </li>
+                    <li><a href="#section_3">Osaka</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="section_1">
+            <div class="title"></div>
+        </section>
+        <section id="section_2">
+                <div class="title"></div>
+        </section>
+        <section id="section_3">
+                <div class="title"></div>
+        </section>
+        <main>
+            <div class="img">
+                <div class="img1">
+                    <div class="mask1">
+                        <div class="font">Kyoto</div>
+                    </div>
+                </div>
+                <div class="img2">
+                    <div class="mask2">
+                        <div class="font">Tokyo</div>
+                    </div>
+                </div>
+                <div class="img3">
+                    <div class="mask3">
+                        <div class="font">Osaka</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        html{
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body{
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            perspective: 1px;
+            transform-style: preserve-3d;
+            height: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            font-size:50px;
+            font-family: 'Stardos Stencil', cursive;;
+        }
+
+        header{
+            box-sizing: border-box;
+            min-height: 100vh;
+            padding: 30vw 0 5vw;
+            position: relative;
+            transform-style: inherit;
+            width: 100vw;
+        }
+        header h1 {
+            margin-top: -100px;
+        }
+        header, header:before{
+            background: 50% 50% / cover;
+        }
+        header::before{
+            bottom: 0;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/Th%C3%B3rsm%C3%B6rk%2C_Iceland_%28Unsplash_8I49k45G-3A%29.jpg");
+            background-size: cover;
+            transform-origin: center center 0;
+            transform: translateZ(-1px) scale(2);
+            z-index: -1;
+            min-height: 100vh;
+        }
+
+        header * { 
+            font-weight: normal;
+            letter-spacing: 0.2em;
+            text-align: center;
+            margin: 0;
+            padding: 1em 0;
+        }
+        .mask{
+            width:100%;
+            height:100%;
+            background-color:rgba(102, 93, 145, 0.212);
+        }
+
+        .text{
+            color:white;
+            background-color:rgba(255, 255, 255, 0.274);
+            padding:15px;
+            position:relative;
+            left:calc(50% - 130px);
+            top:calc(50% - 30px);
+            font-size: 25px;
+            font-weight:900;
+            letter-spacing: 2px;
+            font-family:'Cormorant Garamond', cursive;
+        }
+
+        #text1{
+            position: relative;
+        }
+        .text1{
+            width: 100%;
+            height:320px;
+            background-color:#1d242c;
+        }
+
+        .text1-title{
+            color:white;
+            position:absolute;
+            top:10px;
+            left:calc(50% - 182px);
+            font-size:30px;
+            letter-spacing: 2px;
+            font-family:"Poiret One", cursive;
+        }
+
+        .text1-text{
+            color:white;
+            padding:55px;
+            position:absolute;
+            top:50px;
+            font-size:30px;
+            font-family:"Great Vibes", cursive;
+        }
+
+        .icelandnight{
+            width:100%;
+            height:50vh;
+            background-image: url('https://live.staticflickr.com/8198/8219065108_0ef0e64339_k.jpg');
+            background-size:cover;
+            top:0;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .text3{
+            width: 100%;
+            height:320px;
+            background-color:#1d242c;
+            position: absolute;
+        }
+
+        .text3-title{
+            color:white;
+            position:absolute;
+            top:10px;
+            left:calc(50% - 182px);
+            font-size:30px;
+            letter-spacing: 2px;
+            font-family:"Poiret One", cursive;
+        }
+
+        .text3-text{
+            color:white;
+            padding:55px;
+            position:absolute;
+            top:50px;
+            font-size:30px;
+            font-family:"Great Vibes", cursive;
+        }
+
+        .text4{
+            width: 100%;
+            height:320px;
+            background-color:#1d242c;
+            position: relative;
+        }
+
+        .text4-title{
+            color:white;
+            position:absolute;
+            top:20px;
+            left:calc(50% - 182px);
+            font-size:30px;
+            letter-spacing: 2px;
+            font-family:"Poiret One", cursive;
+        }
+
+        .text4-text{
+            color:white;
+            padding:55px;
+            position:absolute;
+            top:80px;
+            font-size:30px;
+            font-family:"Great Vibes", cursive;
+        }
+
+        .icelandnight2{
+            width:100%;
+            height:70vh;
+            background-image: url('https://live.staticflickr.com/7886/47499809651_aeec135c87_k.jpg');
+            background-size:cover;
+            top:0;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .text5{
+            width: 100%;
+            height:320px;
+            background-color:#1d242c;
+            position: relative; 
+        }
+
+        .text5-title{
+            color:white;
+            position:absolute;
+            top:20px;
+            left:calc(50% - 62px);
+            font-size:30px;
+            letter-spacing: 2px;
+            font-family:"Poiret One", cursive;
+        }
+
+        .text5-text{
+            color:white;
+            padding:55px;
+            position:absolute;
+            top:80px;
+            font-size:30px;
+            font-family:"Great Vibes", cursive;
+        }
+
+        .end{
+            width:100%;
+            height:100vh;
+            background-image: url('https://live.staticflickr.com/4904/46962031552_171d3ab769_k.jpg');
+            background-size:cover;
+            top:0;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .mask2{
+            width:100%;
+            height:100%;
+            background-color:rgba(144, 141, 160, 0.164);
+        }
+
+        .endtrip{
+            color:white;
+            background-color:rgba(255, 255, 255, 0.274);
+            padding:16px;
+            position:absolute;
+            left:calc(50% - 70px);
+            top:calc(50% - 30px);
+            font-size: 25px;
+            font-weight:900;
+            letter-spacing: 2px;
+            font-family:'Cormorant Garamond', cursive;
+        }
+    </style>
+
+        
+</head>
+<body>
+        <div class="mask">
+            <header>
+                <h1>ICELAND TRAVEL</h1>
+                <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil&display=swap" rel="stylesheet">
+            </header>
+        </div>
+        <section id="text1">
+                <div class="text1">
+                        <h1 class="text1-title">Where to Stay in Iceland</h1>
+                        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Poiret+One&display=swap" rel="stylesheet">
+                        <div class="text1-text">Every year, more and more people visit Iceland, to marvel over its incredible natural wonders and to partake in the many exciting excursions on offer. As the tourism industry has boomed, hotels, guesthouses, hostels and apartments have all opened their doors to meet the ever-increasing demand. 
+                        The wealth of choice, however, can make it a bit of a hassle to organise a holiday here, so read ahead for everything you need to know about finding the best places to stay in Iceland.
+                        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Great+Vibes|Poiret+One&display=swap" rel="stylesheet">
+                        </div>
+                </div>            
+        </section>
+
+        <section id="text2">                
+                <div class="icelandnight">
+                        <div class="mask"></div>
+                </div>
+        </section>
+
+        <section id="text3">
+                <div class="text3">
+                        <h1 class="text3-title">Go Sightseeing at Nighttime</h1>
+                        <div class="text3-text">
+                                You can expect some of Iceland’s most popular attractions to be a bit crowded during the long summer days of high-season. But if you are indeed visiting in mid-summer, you will be blessed by the unremitting midnight sun whose light lasts for 24 hours.
+                                Taking advantage of the endless days by travelling at night will let you avoid the crowds and experience a personal, magical moment of timelessness in nature’s amber embrace. 
+                        </div>
+                </div>
+        </section>
+
+        <section id="text4">
+            <div class="text4">
+                    <h1 class="text4-title">Visit the best places to see</h1>
+                    <div class="text4-text">
+                        Our last day would normally have had us heading to the airport and returning our hire car, perhaps with a stop at the Blue Lagoon on the way.
+
+                        However, we weren’t ready to stop and we had a few more days in the country. So we extended our hire car a few more days, and went off on further explorations under our own steam. More on those in a future post!
+                    </div>
+            </div>
+        </section>
+
+        <section>
+                <div class="icelandnight2">
+                    <div class="mask"></div>  
+                </div>
+        </section>
+
+        <section id="text5">
+            <div class="text5">
+                <h1 class="text5-title">The end</h1>
+                <div class="text5-text">
+                Arctic Norway is ideally located in the middle of the Northern Lights zone. You can choose between Northern Lights Cruise Packages, Northern Lights Tours and Short Northern Lights Breaks, with overnight stay at an unforgettable ice hotel and adventurous activities such as dog sledding, snowmobile safari, reindeer sledge & king crab fishing.
+                </div>
+            </div>
+        </section>
+
+        <section>
+                <div class="end">
+                    <div class="mask2"></div>  
+                    <div class="endtrip">Have Fun!</div>
+                </div>
+        </section>
+</body>
+</html>

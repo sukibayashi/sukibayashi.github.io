@@ -1,0 +1,124 @@
+body{
+    margin:0
+}
+
+.all{
+    width: 100%;
+    height:100vh
+
+}
+.contanier{
+    max-width: 991px;
+    margin: 0 auto;
+}
+/* navbar */
+nav{
+    width:100%;
+    height:60px;
+    background-color:gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width:50px;
+    height:50px;
+    margin-top:5px;
+    background-color:red;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Pakistan_%28orthographic_projection%29.svg/2000px-Pakistan_%28orthographic_projection%29.svg.png');
+    background-size: contain;
+}
+
+nav .menulist ul{
+    list-style-type: none;
+    display:flex;
+    color:white;
+    padding:5px 5px
+}
+
+nav .menulist ul li{
+    padding: 0px 0px;
+}
+
+nav .menulist ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 22px 15px;
+}
+nav .menulist ul li a:hover{
+    background-color: rgb(88, 86, 86);
+    transition:all 0.5s
+}
+/* navbar */
+
+/* Page3 */
+    #page_3{
+        width:100%;
+        height:calc(100vh - 110px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(201, 198, 198, 0.322);
+    }
+    
+    .card1{
+        width:31%;
+        height:70%;
+        background-color:rgb(148, 73, 148);
+        border: 1px solid black;
+        margin:10px
+    }
+    .cardphoto1{
+        width:100%;
+        height:60%;
+        background-image: url('https://cdn.pixabay.com/photo/2018/04/12/21/10/cube-3314811_960_720.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cardtext1{
+        padding: 14px 14px;
+    }
+
+    .card2{
+        width:32%;
+        height:70%;
+        background-color: wheat;
+        border: 1px solid black;
+        margin:10px
+    }
+    .cardphoto2{
+        width:100%;
+        height:60%;
+        background-image: url('https://images.pexels.com/photos/972161/pexels-photo-972161.jpeg?cs=srgb&dl=video-game-972161.jpg&fm=jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cardtext2{
+        padding:15px 9px;
+    }
+
+    .card3{
+        width:31%;
+        height:70%;
+        background-color: teal;
+        border: 1px solid black;
+        margin:10px
+    }
+    .cardphoto3{
+        width:100%;
+        height:60%;
+        background-image: url('https://c.pxhere.com/images/35/f9/caac168bb583ece977706a5c00df-1446043.jpg!d');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cardtext3{
+        padding: 16px;
+    }    
+
+/* Page3 */
+footer{
+    text-align: center;
+    background-color: gray;
+    color:black;
+    padding:15px    
+}

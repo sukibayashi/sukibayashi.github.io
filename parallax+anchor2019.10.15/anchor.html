@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anchor</title>
+
+    <style>
+      body {
+        margin: 0 auto;
+      }
+
+      nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+      }
+
+      nav .container {
+        max-width: 1500px;
+        margin: 0;
+      }
+
+      nav .logo {
+        float: left;
+      }
+      nav .logo img {
+        height: 43px;
+        position: relative;
+        top: 6px;
+        left: 10px;
+      }
+
+      nav .logo h1 {
+        display: none;
+      }
+
+      ul {
+        float: right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        float: left;
+        padding: 20px 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 15px 20px;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      ul li a:hover {
+        width: 85px;
+        height: 16px;
+        background-color: rgba(0, 0, 0, 0.096);
+        font-size: 105%;
+      }
+
+      .imgsize {
+        height: 110vh;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      #section_1 {
+        background-image: url("https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=altitude-clouds-cold-933054.jpg&fm=jpg");
+      }
+
+      #section_2 {
+        background-image: url("https://live.staticflickr.com/7578/15779556605_c49c91a0f1_k.jpg");
+      }
+
+      #section_3 {
+        background-image: url("https://live.staticflickr.com/5452/30697607330_7ab976f6dc_k.jpg");
+      }
+
+      .clearfix {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#section_1">
+          <div class="logo">
+            <img
+              src="https://cf-media.press.discovery.com/ugc/logos/2009/08/22/DSC_pos_bw.png"
+              alt=""
+            />
+
+            <h1>Discovery</h1>
+          </div>
+        </a>
+
+        <ul>
+          <li>
+            <a href="#section_1">Mountain</a>
+          </li>
+          <li>
+            <a href="#section_2">Desert</a>
+          </li>
+          <li>
+            <a href="#section_3">Waterfall</a>
+          </li>
+          <div class="clearfix"></div>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="section_1" class="imgsize">
+        <div class="title"></div>
+      </section>
+      <section id="section_2" class="imgsize">
+        <div class="title"></div>
+      </section>
+      <section id="section_3" class="imgsize">
+        <div class="title"></div>
+      </section>
+    </main>
+  </body>
+</html>

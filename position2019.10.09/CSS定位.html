@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Position</title>
+
+    <style>
+        .body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position: relative;
+            top: 50px;
+            left: 10px
+        }
+
+        .box2 {
+            width: 80px;
+            height: 300px;
+            background-color: blueviolet;
+            position: fixed;
+            right: 250px
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            position: absolute;
+            top: calc(50%);
+            left: calc(50%)
+        }
+
+        .box4 {
+            width: 300px;
+            height: 400px;
+            background-color: violet;
+            position: relative;
+            left: calc(20%)
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: calc(50%-25px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4">
+        <div class="box5"></div>
+    </div>
+
+
+</body>
+
+</html>
