@@ -99,8 +99,14 @@
                                 <div class="icon">
                                     <img src="./img/icon-windows.svg" alt="Windows icon">
                                 </div>
-                                <div class="content"></div>
-                                <div class="action"></div>
+                                <div class="content">
+                                    <h2>Windows</h2>
+                                    <p>Create and publish your own Windows apps.</p>
+                                </div>
+                                <div class="action">
+                                    <img src="./img/arrow-black.svg" aria-hidden="true" alt="Design for Windows">
+                                    <span>Get Started</span>
+                                </div>
                             </div>
                         </div>
                         <div class="iOS">
@@ -128,5 +134,18 @@
             </div>
         </main>
     </div>
+
+    <script>
+        var mobile_nav_toggle = document.querySelector('.menutoggle');
+        //把.menutoggle命名為Mobile_nav_toggle
+        var mobile_nav = document.querySelector('.mobilemenu')
+        //把.mobilemenu命名為mobile_nav
+        
+        mobile_nav_toggle.onclick = function(){
+        //把mobile_nav_toggle作爲一個函式
+            mobile_nav.classList.toggle('active');
+                
+        }
+    </script>
 </body>
 </html>

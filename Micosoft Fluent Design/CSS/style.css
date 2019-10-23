@@ -336,6 +336,47 @@ main{
     max-width: 100%;
     max-height: 100%;
 }
+.windows_main .content{
+    height: 100px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0px 26px;
+}
+.windows_main .content h2{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    letter-spacing: -0.03rem;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0px 0px 26px;
+}
+.windows_main .content p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.windows_main .action{
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0px 26px 10px;
+}
+.windows_main .action img{
+    margin: 0px 16px 0px 0px;
+}
+.windows_main .action span{
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    color: rgb(0, 0, 0);
+}
 
 
 @media (max-width:1680px){
@@ -369,6 +410,8 @@ main{
         display:none;
         padding: 0px 0px 0px 120px;
     }
+
+    
     
     .menutoggle{
         position: absolute;
