@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title_1" class="red_title" onclick="change_title()">title</h1>
+
+    <div id="title_2" class="green_title">Menu</div>
+
+    <button id="btn1">Click!</button>
+
+    <script>
+        function change_title(){
+            var my_heading = document.querySelector('h1.red_title');
+            my_heading.textContent = 'Hello World!'
+        }
+
+        var btn = document.querySelector('#btn1')
+        var title = document.querySelector('#title_2')
+
+        btn.onclick = function() {
+            title.textContent = "Good night"
+        }
+    </script>
+
+</body>
+</html>

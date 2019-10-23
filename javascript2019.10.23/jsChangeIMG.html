@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image_1" src="https://thumbs-prod.si-cdn.com/d4e3zqOM5KUq8m0m-AFVxuqa5ZM=/800x600/filters:no_upscale():focal(554x699:555x700)/https://public-media.si-cdn.com/filer/a4/04/a404c799-7118-459a-8de4-89e4a44b124f/img_1317.jpg" alt="">
+
+    <script>
+        var img_A = 'https://thumbs-prod.si-cdn.com/d4e3zqOM5KUq8m0m-AFVxuqa5ZM=/800x600/filters:no_upscale():focal(554x699:555x700)/https://public-media.si-cdn.com/filer/a4/04/a404c799-7118-459a-8de4-89e4a44b124f/img_1317.jpg';
+        // 將圖片1命名為img_A
+        var img_B = 'https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/152964589-welcome-home-new-cat-632x475.jpg';
+        // 將圖片2命名為img_B
+
+        var myImage = document.querySelector('#image_1');
+        // 在document中找到id名字為#image_1的文件，命名為myImage
+        
+        myImage.onclick = function() {
+        //設定myImage的onclick的函式
+        var mySrc = myImage.getAttribute('src');
+        //取得目前圖片路徑
+        if(mySrc === img_A) {
+
+        //判斷如果是A圖片，就換B；否則換A
+        myImage.setAttribute ('src',img_B);
+        //換成B圖片
+        } else {
+        //換成A圖片
+        myImage.setAttribute ('src',img_A);
+    }
+}
+
+    </script>
+</body>
+</html>
