@@ -410,6 +410,154 @@ main{
     color: rgb(0, 0, 0);
 }
 
+/* iOS */
+.iOS{
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+}
+.iOSmain{
+    background-color: rgb(207, 143, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.iOSmain .icon{
+    min-height: 96px;
+    width: 100%;
+    text-align: left;
+    flex: 1 1 auto;
+    padding: 26px;
+}
+.iOSmain img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.iOSmain .content{
+    height: 100px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0px 26px;
+}
+.iOSmain .content h2{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    letter-spacing: -0.03rem;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0px 0px 26px;
+}
+.iOSmain .content p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+.iOSmain .action{
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0px 26px 10px;
+}
+.iOSmain .action img{
+    margin: 0px 16px 0px 0px;
+}
+.iOSmain .action span{
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    color: rgb(0, 0, 0);
+}
+/* iOS */
+
+/* android */
+.android{
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+}
+.androidmain{
+    background-color: rgb(105, 229, 110);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.androidmain .icon{
+    min-height: 96px;
+    width: 100%;
+    text-align: left;
+    flex: 1 1 auto;
+    padding: 26px;
+}
+.androidmain .icon img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.androidmain .content{
+    height: 100px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0px 26px;
+}
+.androidmain .content h2{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    letter-spacing: -0.03rem;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0px 0px 26px;
+}
+.androidmain .content p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.androidmain .action{
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0px 26px 10px;
+}
+.androidmain .action img{
+    margin: 0px 16px 0px 0px;
+}
+.androidmain .action span{
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    color: rgb(0, 0, 0);
+}
+
+.platforms::after{
+    content: "";
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: rgb(95, 207, 99);
+}
+
 
 @media (max-width:1680px){
     .contanier{
