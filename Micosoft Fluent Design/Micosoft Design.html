@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="root">
-        <header>
+        <header class="header">
             <div class="contanier">
                 <div class="logo">
                     <svg viewBox="0 0 24 24">
@@ -44,13 +44,13 @@
                     <li class="menulistitem">
                         <a class="web" href="">Web</a>
                     </li>
-                    <li class="menulistitem">
+                    <li class="menulistitem2">
                         <a class="web" href="">Windows</a>
                     </li>
-                    <li class="menulistitem">
+                    <li class="menulistitem3">
                         <a class="web" href="">iOS</a>
                     </li>
-                    <li class="menulistitem">
+                    <li class="menulistitem4">
                         <a class="web" href="">Android</a>
                     </li>
                 </ul>
@@ -140,12 +140,23 @@
         //把.menutoggle命名為Mobile_nav_toggle
         var mobile_nav = document.querySelector('.mobilemenu')
         //把.mobilemenu命名為mobile_nav
+        var header_nav = document.querySelector('.header');
+        //把.header命名为header_nav_toggle
+        var menulist_nav = document.querySelector('.menulistitem')
+        var menulist2_nav = document.querySelector('.menulistitem2')
+        var menulist3_nav = document.querySelector('.menulistitem3')
+        var menulist4_nav = document.querySelector('.menulistitem4')
         
         mobile_nav_toggle.onclick = function(){
         //把mobile_nav_toggle作爲一個函式
-            mobile_nav.classList.toggle('active');
-                
+            mobile_nav.classList.toggle('active'); 
+            header_nav.classList.toggle('active');
+            menulist_nav.classList.toggle('active')
+            menulist2_nav.classList.toggle('active')
+            menulist3_nav.classList.toggle('active')
+            menulist4_nav.classList.toggle('active')
         }
+
     </script>
 </body>
 </html>
