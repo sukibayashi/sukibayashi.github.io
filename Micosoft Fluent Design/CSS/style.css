@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    
 }
 
 body{
@@ -557,6 +558,68 @@ main{
     z-index: 1;
     background-color: rgb(95, 207, 99);
 }
+/* android */
+
+/* everydevice */
+.everydevice{
+    width: 100%;
+    min-height: 768px;
+    background: url('../img/msft-verge-fluent.jpg') 50% center / cover no-repeat fixed rgb(204, 204, 204);
+}
+
+.everydeviceinner{
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.everydeviceinner .title{
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    padding: 10px 20px 0px;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+.everydeviceinner .title.visble{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.everydeviceinner .title h2{
+    color: rgb(0, 0, 0);
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+.everydeviceinner .content{
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    margin: 60px 0px 0px;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.everydeviceinner .content.visible{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.everydeviceinner .contentblock{
+    width: 100%;
+    max-width: 384px;
+    padding: 0px 16px 0px 24px;
+}
+.everydeviceinner .contentblock p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px;
+}
+
 
 
 @media (max-width:1680px){
