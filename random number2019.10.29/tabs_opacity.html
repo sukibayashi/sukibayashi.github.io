@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        main{
+            max-width: 400px;
+            margin:25px auto;
+        }
+
+        .tabs_list{
+            display:flex;
+        }
+
+        .tabs{
+            background-color: #ccc;
+            padding: 10px;
+
+            border-radius: 30px 5px 0 0;
+            cursor: pointer;
+        }
+        .tabs.active{
+            background-color: gray;
+        }
+
+        .content_text{
+            opacity: 0;
+            pointer-events: none;
+            background-color: wheat;
+            transition: 1s opacity;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .content_text.active{
+            height: auto;
+            opacity: 1;
+            pointer-events: all;
+            padding: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="tabslist" class="tabs_list">
+            <div id="tabs_btn1" class="tabs active">TAB A</div>
+            <div id="tabs_btn2" class="tabs">TAB B</div>
+            <div id="tabs_btn3" class="tabs">TAB C</div>
+        </div>
+        
+        <section id="content_list"> 
+            <div id="content_text1" class="content_text active">
+                <h1>Lorem A</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam a explicabo dolorem quam labore quod alias quis voluptates, exercitationem quia quibusdam suscipit illum soluta aliquam amet cumque fugiat possimus eligendi.</p>
+            </div>
+            <div id="content_text2" class="content_text">
+                <h1>Lorem B</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam a explicabo dolorem quam labore quod alias quis voluptates, exercitationem quia quibusdam suscipit illum soluta aliquam amet cumque fugiat possimus eligendi.</p>
+            </div>
+            <div id="content_text3" class="content_text">
+                <h1>Lorem C</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam a explicabo dolorem quam labore quod alias quis voluptates, exercitationem quia quibusdam suscipit illum soluta aliquam amet cumque fugiat possimus eligendi.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        //将tabs_btn命名为变数tabs
+        var tabs1 = document.querySelector('#tabs_btn1');
+        var tabs2 = document.querySelector('#tabs_btn2');
+        var tabs3 = document.querySelector('#tabs_btn3');
+
+        //将content_text命名为变数content
+        var content1 = document.querySelector('#content_text1');
+        var content2 = document.querySelector('#content_text2');
+        var content3 = document.querySelector('#content_text3');
+
+        //将tabs的onclick作为一个函式
+        tabs1.onclick = function () {
+            remove_active();
+            tabs1.classList.add('active');
+            content1.classList.add('active');
+        }
+        tabs2.onclick = function () {
+            remove_active();
+            tabs2.classList.add('active');
+            content2.classList.add('active');
+        }
+        tabs3.onclick = function () {
+            remove_active();
+            tabs3.classList.add('active');
+            content3.classList.add('active');
+        }
+
+
+
+        //将所有remove作为一个函式
+        function remove_active() {
+            tabs1.classList.remove('active');
+            tabs2.classList.remove('active');
+            tabs3.classList.remove('active');
+            content1.classList.remove('active');
+            content2.classList.remove('active');
+            content3.classList.remove('active');
+        }
+    </script>
+</body>
+</html>

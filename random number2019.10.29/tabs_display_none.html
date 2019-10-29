@@ -25,15 +25,12 @@
             border-radius: 10px 10px 0 0;
             padding:10px;
             margin:-1px 1px; 
-            color:#423E37
+            color:#423E37;
+            cursor: pointer;
         }
         .tab_btn.active{
             background-color:#423E37 ;
             color:white;
-        }
-
-        .content{
-            
         }
 
         .textlist{
@@ -58,9 +55,9 @@
         </div>
 
         <section class="content">
-            <div id = "textlist1" class="textlist">
+            <div id = "textlist1" class="textlist active">
                 <h1>Lorem A</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam et corrupti enim autem animi. Dolorem ut inventore tempora deleniti esse quos illum consectetur maiores veritatis obcaecati, aperiam ipsa facere.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, necessitatibus quibusdam! Quam fugit ipsum nobis repellendus autem ipsa libero minus tenetur fuga neque consectetur itaque consequuntur, amet inventore, alias cupiditate.</p>
             </div>
             <div id = "textlist2" class="textlist">
                     <h1>Lorem B</h1>
@@ -88,54 +85,37 @@
         tab1.onclick = function () {
         // console.log(tab1)
             //remove all active
-            tab1.classList.remove('active')
-            tab2.classList.remove('active')
-            tab3.classList.remove('active')
+            remove_active();
             //add on this active
             tab1.classList.add('active')
+            content1.classList.add('active')
         }
 
         tab2.onclick = function () {
             //remove all active
-            tab1.classList.remove('active')
-            tab2.classList.remove('active')
-            tab3.classList.remove('active')
+            remove_active();
             //add on this active
             tab2.classList.add('active')
+            content2.classList.add('active')
         }
 
         tab3.onclick = function () {
             //remove all active
-            tab1.classList.remove('active')
-            tab2.classList.remove('active')
-            tab3.classList.remove('active')
+            remove_active();
             //add on this active
             tab3.classList.add('active')
+            content3.classList.add('active')
         }
 
-        content1.onclick = function(){
-            //remove all active
+        function remove_active(){
+            tab1.classList.remove('active')
             content1.classList.remove('active')
+            tab2.classList.remove('active')
             content2.classList.remove('active')
-            content3.classList.remove('active')
-            //add on this active
-            content1.classList.add('active')
-        }
-        content2.onclick = function(){
-            //remove all active
-            content1.classList.remove('active')
+            tab2.classList.remove('active')
             content2.classList.remove('active')
+            tab3.classList.remove('active')
             content3.classList.remove('active')
-            //add on this active
-            content2.classList.add('active')
-        }
-        content3.onclick = function(){
-            //remove all active
-            content1.classList.remove('active')
-            content2.classList.remove('active')
-            content3.classList.remove('active')
-            //add on this active
-            content3.classList.add('active')
         }
 
     </script>
