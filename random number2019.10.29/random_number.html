@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    .card{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    #btn_reset{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #btn_reset.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <h1>猜0 ~ 100的數字</h1>
+        <p id="top_text">猜猜看吧~</p>
+
+        <input id="user_guess" type="number" min="0" max="100" >
+        <button id="btn">Click!</button>
+        <button id="btn_reset">Reset</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        var answer = Math.floor(Math.random() * 101);
+        console.log("答案是：", answer);
+        var guess;
+        var round = 1;
+        var answer_text = document.querySelector('#top_text');
+        var start_number = 0;
+        var end_number = 100;
+        // console.log(answer_text);
+
+        //宣告變數
+        btn.onclick = function () {
+            //取得input的數值，之後作判斷
+            guess = parseInt(document.querySelector('#user_guess').value);
+            // console.log("使用者輸入：", guess);
+            
+        if(answer == guess){
+            //猜對了，顯示回合數，恭喜文字，重製按鈕
+            // console.log("恭喜您，答對了"); 
+            answer_text.textContent = `恭喜您答對了! 共猜了${round}次`;
+            btn_reset.classList.add('active');
+            
+        }
+        else if (answer > guess){
+            console.log("猜錯了，太小");
+            start_number = guess;
+            document.querySelector("#user_guess").value;
+            answer_text.textContent = `猜錯了，你的數字太小了！ 範圍在${start_number} - ${end_number}`;
+        }
+        else {
+            console.log("猜錯了，太大");
+            end_number = guess;
+            document.querySelector("#user_guess").value;
+            answer_text.textContent = `猜錯了，你的數字太大了! 範圍在${start_number}- ${end_number}`;
+          }
+        }
+
+        btn_reset.onclick = function () {
+            //重新開始
+            answer = Math.floor(Math.random() * 101);
+            top_taxt.textContent = "重新開始遊戲咯!";
+            round = 1;
+            start_number = 0;
+            end_number = 0;
+
+            document.querySelector('#user_guess').value;
+            btn_reset.classList.remove('active');
+            
+        }
+
+        
+
+        
+    </script>
+</body>
+</html>
