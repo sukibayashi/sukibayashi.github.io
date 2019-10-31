@@ -85,7 +85,12 @@
         tab1.onclick = function () {
         // console.log(tab1)
             //remove all active
-            remove_active();
+            tab1.classList.remove('active');
+            tab2.classList.remove('active');
+            tab3.classList.remove('active');
+            content1.classList.remove('active');
+            content2.classList.remove('active');
+            content3.classList.remove('active');
             //add on this active
             tab1.classList.add('active')
             content1.classList.add('active')
@@ -93,7 +98,12 @@
 
         tab2.onclick = function () {
             //remove all active
-            remove_active();
+            tab1.classList.remove('active');
+            tab2.classList.remove('active');
+            tab3.classList.remove('active');
+            content1.classList.remove('active');
+            content2.classList.remove('active');
+            content3.classList.remove('active');
             //add on this active
             tab2.classList.add('active')
             content2.classList.add('active')
@@ -101,21 +111,15 @@
 
         tab3.onclick = function () {
             //remove all active
-            remove_active();
+            tab1.classList.remove('active');
+            tab2.classList.remove('active');
+            tab3.classList.remove('active');
+            content1.classList.remove('active');
+            content2.classList.remove('active');
+            content3.classList.remove('active');
             //add on this active
             tab3.classList.add('active')
             content3.classList.add('active')
-        }
-
-        function remove_active(){
-            tab1.classList.remove('active')
-            content1.classList.remove('active')
-            tab2.classList.remove('active')
-            content2.classList.remove('active')
-            tab2.classList.remove('active')
-            content2.classList.remove('active')
-            tab3.classList.remove('active')
-            content3.classList.remove('active')
         }
 
     </script>

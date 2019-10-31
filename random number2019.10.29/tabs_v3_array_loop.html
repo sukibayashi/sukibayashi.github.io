@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        main{
+            max-width: 400px;
+            margin:25px auto;
+        }
+
+        .tabs_list{
+            display:flex;
+        }
+
+        .tabs{
+            background-color: #ccc;
+            padding: 10px;
+
+            border-radius: 30px 5px 0 0;
+            cursor: pointer;
+        }
+        .tabs.active{
+            background-color: gray;
+        }
+
+        .content_text{
+            opacity: 0;
+            pointer-events: none;
+            background-color: wheat;
+            transition: 1s opacity;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .content_text.active{
+            height: auto;
+            opacity: 1;
+            pointer-events: all;
+            padding: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="tabslist" class="tabs_list">
+            <div class="tabs active">TAB A</div>
+            <div class="tabs">TAB B</div>
+            <div class="tabs">TAB C</div>
+        </div>
+        
+        <section id="content_list"> 
+            <div class="content_text active">
+                <h1>Lorem A</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam a explicabo dolorem quam labore quod alias quis voluptates, exercitationem quia quibusdam suscipit illum soluta aliquam amet cumque fugiat possimus eligendi.</p>
+            </div>
+            <div class="content_text">
+                <h1>Lorem B</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam a explicabo dolorem quam labore quod alias quis voluptates, exercitationem quia quibusdam suscipit illum soluta aliquam amet cumque fugiat possimus eligendi.</p>
+            </div>
+            <div class="content_text">
+                <h1>Lorem C</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam a explicabo dolorem quam labore quod alias quis voluptates, exercitationem quia quibusdam suscipit illum soluta aliquam amet cumque fugiat possimus eligendi.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        //将tabs命名为变数tab_array
+        var tab_array = document.querySelectorAll('.tabs');
+        //将content_text命名为变数content_array,回傳陣列
+        var content_array = document.querySelectorAll('.content_text');
+
+
+        //設定初始值、判斷式以及更新低能表達式
+        for (let index = 0; index < tab_array.length; index++) {
+            //抓出個別的tab_btn
+            const tab_btn = tab_array[index];
+            console.log(tab_btn);   
+
+            //tab_btn綁定按鍵事件
+            tab_btn.onclick = function(){
+                //移出所有active
+                remove_active();
+
+                tab_btn.classList.add('active');
+                content_array[index].classList.add('active')
+            }
+        }
+
+        function remove_active(){
+            for (const tab_btn of tab_array) {
+                tab_btn.classList.remove('active');
+            }
+
+            content_array.forEach(content_array => {
+                content_array.classList.remove('active');
+            });
+        }
+
+
+        // //移出所有active
+        // function remove_active() {
+        //     tabs_btn1.classList.remove('active');
+        //     tabs_btn2.classList.remove('active');
+        //     tabs_btn3.classList.remove('active');
+        //     content_text1.classList.remove('active');
+        //     content_text2.classList.remove('active');
+        //     content_text3.classList.remove('active');
+        // }
+    </script>
+</body>
+</html>
