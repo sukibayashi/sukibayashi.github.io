@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03_jQuery和JS加载模式</title>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+    <img src="https://img.alicdn.com/tfs/TB1GqzekKH2gK0jSZJnXXaT1FXa-190-121.gif" alt="">
+    
+    <script>
+            // window.onload = function (){
+            //     //1.通过原生的JS入口函数可以拿到DOM元素
+            //     var img = document.getElementsByTagName(".img")[0];
+            //     console.log(img);
+            //     //2.通过原生的JS入口函数可以拿到DOM元素的宽高(貌似js不能再用这个来使用)
+            //     var width =document.getElementsByTagName((".img")[0].width;
+            // }
+    
+            // 原生JS和jQuery入口函数的加载模式不同
+            // 原生JS会等到DOM元素加载完毕,并且图片也加载完毕才会执行
+            // jQuery会等到DOM元素加载完毕,但不会等到图片也加载完毕就会执行
+
+
+            // $(document).ready(function () {
+            //     //1.通过jQuery入口函数可以拿到DOM元素
+            //     var $img = $("img")[0];
+            //     console.log($img);
+            //     //2.通过jQuery入口函数可以拿到DOM元素的宽高
+            //     var $width = $img.width;
+            //     console.log('ready', $width);
+
+            // })
+
+            // 1.原生JS如果编写了多个入口函数,后面编写的会覆盖前面编写的
+            //    2.jQuery中编写多个入口函数,后面的不会覆盖前面的
+            window.onload = function () {
+                alert('hello inj1');
+            }
+            window.onload = function () {
+                alert('hello inj2');
+            }
+
+            $(document).ready(function () {
+                alert("hello Inj1");
+            })
+            
+            $(document).ready(function () {
+                alert("hello Inj2");
+            })
+
+            //结合两者区别:
+            // 1.加载时机;
+            // 2.编写个数;
+            // 3.简化写法
+        </script>
+</body>
+</html>
