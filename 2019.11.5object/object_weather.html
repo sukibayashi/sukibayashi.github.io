@@ -8,43 +8,88 @@
     <title>Document</title>
 </head>
 
+<style>
+    body{
+        background-color: #1f1f28;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        border: 1px solid;
+        padding: 1px 40px;
+        background: linear-gradient(#a55eea, #be8cef);
+        margin: 10px;
+        color:white;
+    }
+</style>
+
 <body>
+    <div class="cards">
+        <!-- <div class="card">
+            <h1>台中市</h1>
+            <p>晴时多云</p>
+            <p>降雨率:50%</p>
+            <p>温度:20 ~ 30 °C</p>
+        </div> -->
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script>
-        // $.ajax({
-        //     // 進行要求的網址(URL)
-        //     url: 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&format=JSON&locationName=%E8%87%BA%E4%B8%AD%E5%B8%82',
-        //     // 要送出的資料 (會被自動轉成查詢字串)
-        //     data: {
-        //         id: 'a001'
-        //     },
-        //     // 要使用的要求method(方法)，POST 或 GET
-        //     type: 'GET',
-        //     // 資料的類型
-        //     dataType: 'json',
-        // })
-        //     // 要求成功時要執行的程式碼
-        //     // 回應會被傳遞到回調函式的參數
-        //     .done(function (res) {
-        //         
 
-        //     })
-
-        var data;
+        var cards = document.querySelector('.cards');
 
         $.ajax({
-            url: "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&format=JSON&locationName=%E8%87%BA%E4%B8%AD%E5%B8%82",
-            context: document.body
+            url: "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D",
         }).done(function (res) {
             //jQuery已經把它變成物件了
-            console.log(res.records.location[0]);
+            // console.log(res.records.location);
+            var all_locations = res.records.location;
+            //讲所有的location带入all_locations的变数
+            // console.log(all_locations);
+
+            all_locations.forEach(location => {
+                // console.log(location);
+
+                var locationName = location.locationName;
+                var Wx = location.weatherElement[0].time[0].parameter.parameterName;
+                var Pop = location.weatherElement[1].time[0].parameter.parameterName;
+                var MinT = location.weatherElement[2].time[0].parameter.parameterName;
+                var MaxT = location.weatherElement[4].time[0].parameter.parameterName;
+                console.log(locationName, Pop);
+
+                //原生JS:
+                // cards.innerHTML += ` <div class="card">
+                //                         <h1>台中市</h1>
+                //                         <p>晴时多云</p>
+                //                         <p>降雨率:50%</p>
+                //                         <p>温度:20 ~ 30 °C</p>
+                //                     </div>`;
+                //jQuery:
+                $('.cards').append(`<div class="card">
+                                        <h1>${locationName}</h1>
+                                        <p>${Wx}</p>
+                                        <p>降雨率:s${Pop}%</p>
+                                        <p>温度:${MinT} ~ ${MaxT}°C</p>
+                                    </div>`)
+
+            });
         });
 
-       
-        
-        
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 
