@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        // $.ajax({
+        //     // 進行要求的網址(URL)
+        //     url: 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&format=JSON&locationName=%E8%87%BA%E4%B8%AD%E5%B8%82',
+        //     // 要送出的資料 (會被自動轉成查詢字串)
+        //     data: {
+        //         id: 'a001'
+        //     },
+        //     // 要使用的要求method(方法)，POST 或 GET
+        //     type: 'GET',
+        //     // 資料的類型
+        //     dataType: 'json',
+        // })
+        //     // 要求成功時要執行的程式碼
+        //     // 回應會被傳遞到回調函式的參數
+        //     .done(function (res) {
+        //         
+
+        //     })
+
+        var data;
+
+        $.ajax({
+            url: "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&format=JSON&locationName=%E8%87%BA%E4%B8%AD%E5%B8%82",
+            context: document.body
+        }).done(function (res) {
+            //jQuery已經把它變成物件了
+            console.log(res.records.location[0]);
+        });
+
+       
+        
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .cards {
+            margin: 0 auto;
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="cards"></div>
+
+
+    <script>
+        // var a_phone = {
+        //     brands: "iphoneX",
+        //     color: "white",
+        //     capacity: 256,
+        // }
+
+        // var b_phone = {
+        //     brands: "iphone11_pro",
+        //     color: "Midnight Green",
+        //     capacity: 128,
+        // }
+
+        // var c_phone = {
+        //     brands: "huawei mate pro30",
+        //     color: "blue",
+        //     capacity: 256,
+        //     camera_specifications: ['Primary', 'Ultra-wide', 'Tele'],
+        //     camera: {
+        //         ToF: "3D depth-sensing camera",
+        //         Flash: "Dual-LED",
+        //         video: "4K video, 2160p/60fps",
+        //     }
+        // }
+
+        // var phones = [a_phone, b_phone, c_phone];
+
+        var phones = [{
+            brands: "iphoneX",
+            color: "white",
+            capacity: "256gb",
+            imgUrl: "https://g.foolcdn.com/editorial/images/481125/iphonex-truedepth-back-camera.jpg",
+        }, {
+            brands: "iphone11_pro",
+            color: "Midnight Green",
+            capacity: "128gb",
+            imgUrl:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341326_sd.jpg;maxHeight=640;maxWidth=550",
+        }, {
+            brands: "huawei mate pro30",
+            color: "blue",
+            capacity: "256gb",
+            camera_specifications: ['Primary', 'Ultra-wide', 'Tele'],
+            imgUrl:"https://cdn.mos.cms.futurecdn.net/wMWBtiKS5PaamYGbKmnxfH-768-80.jpg",
+            camera: {
+                ToF: "3D depth-sensing camera",
+                Flash: "Dual-LED",
+                video: "4K video, 2160p/60fps",
+            }
+        }];
+        var cards = document.querySelector(".cards");
+
+        phones.forEach(phone => {
+            console.log(phone);
+
+            cards.innerHTML += `<div class="cards">
+            <div class="card">
+                    <img src="${phone.imgUrl}" alt="" width=320px height=300px;>
+            <div class="content">
+                <h1>${phone.brands}</h1>
+                <p>${phone.color}</p>
+                <p>${phone.capacity}</p>
+            </div>
+            </div>
+        </div>`;
+            
+        });
+    </script>
+</body>
+
+</html>
