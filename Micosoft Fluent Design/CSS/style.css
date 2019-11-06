@@ -238,6 +238,21 @@ main{
     position: relative;
     flex: 1 1 auto;
 }
+
+.media-sc .leftLine{
+    position: absolute;
+    top: -15px;
+    right: 180px;
+    pointer-events: none;
+}
+
+.media-sc .rightLine{
+    position: absolute;
+    bottom: 155px;
+    left: 180px;
+    pointer-events: none;
+}
+
 .media-sc .png{
     width:354px;
     height:603px;
@@ -574,14 +589,10 @@ main{
 
 .everydeviceinner .title{
     width: 100%;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     padding: 10px 20px 0px;
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
-}
-.everydeviceinner .title.visble{
-    opacity: 1;
-    transform: translateY(0px);
 }
 
 .everydeviceinner .title h2{
@@ -596,15 +607,10 @@ main{
 
 .everydeviceinner .content{
     width: 100%;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     margin: 60px 0px 0px;
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
-}
-
-.everydeviceinner .content.visible{
-    opacity: 1;
-    transform: translateY(0px);
 }
 
 .everydeviceinner .contentblock{
@@ -619,7 +625,132 @@ main{
     font-weight: 600;
     margin: 0px;
 }
+/* everydevice */
 
+/* terrafromsphere */
+.terrafromsphere{
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+}
+
+.terrafromsphere .inner{
+    position: relative;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.terrafromsphere .inner .rect{
+    position: absolute;
+    top: -200px;
+    right: 130px;
+    pointer-events: none;
+    z-index: 4;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.terrafromsphere .inner .line{
+    position: absolute;
+    top: 570px;
+    left: 190px;
+    pointer-events: none;
+    transform: translateY(400px);
+    transition: transform 600ms linear 0ms;
+}
+
+.terrafromsphere .inner .sphere{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 100px 100px 50px;
+}
+
+.terrafromsphere .inner .sphere img{
+    max-width: 100%;
+}
+/* terrafromsphere */
+
+/* terrafromdescription */
+.terrafromdescription{
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+}
+
+.terrafromdescription .inner{
+    position: relative;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.terrafromdescription .inner .content{
+    width: 384px;
+    margin: 0px 0px 50px;
+    padding: 0px 16px;
+}
+
+.terrafromdescription .inner .content p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px;
+}
+/* terrafromdescription */
+
+/* terrafrompowerful */
+.terrafrompowerful{
+    width: 100%;
+    position: relative;
+    background-color: rgb(25, 25, 25);
+}
+
+.terrafrompowerful .title{
+    position: absolute;
+    bottom: 80px;
+    left: 0px;
+    width: 100%;
+    z-index: 4;
+}
+
+.terrafrompowerful .title .inner{
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.terrafrompowerful .title .inner h2{
+    color: rgb(25, 25, 25);
+    font-size: 128px;
+    line-height: 144px;
+    font-weight: 600;
+    margin: 0px 0px 0px 26px;
+}
+
+.terrafrompowerful .media1{
+    overflow-y: hidden;
+}
+
+.terrafrompowerful .media1 .media-sc{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.terrafrompowerful .media1 .media-sc img{
+    width: 100%;
+    min-width: 2000px;
+    position: relative;
+    align-self: center;
+}
 
 
 @media (max-width:1680px){

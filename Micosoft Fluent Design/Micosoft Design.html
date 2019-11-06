@@ -7,6 +7,7 @@
     <title>Micosoft Design</title>
 
     <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div id="root">
@@ -72,6 +73,8 @@
                         </div>
                     </div>
                     <div class="media-sc">
+                        <img class="leftLine" src="./img/line-white-01.svg" aria-hidden="true">
+                        <img class="rightLine" src="./img/line-white-02.svg" aria-hidden="true">
                         <div class="png"></div>
                     </div>
                 </div>
@@ -145,18 +148,55 @@
             <div class="everydevice">
                 <div class="everydeviceinner">
                     <div class="title">
-                        <h2 class="Heading">Natural on<br>every device</h2>
+                        <h2 class="Heading" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Natural on<br>every device</h2>
                     </div>
                     <div class="content">
-                        <div class="contentblock">
+                        <div class="contentblock" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
                             <p>"People move and shift across devices and platforms throughout their day . From laptops to phones, from PCs to holograms. From office to living room, from real to virtual. Experiences seamlessly move and shift with them."</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="terrafromsphere">
+                <div class="inner">
+                    <div class="rect">
+                        <img src="./img/rect-white-01.svg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    </div>
+                    <div class="line" data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <img src="./img/line-white-03.svg" >
+                    </div>
+                    <div class="sphere" data-aos="zoom-in" data-aos-delay="1500">
+                        <img src="./img/sphere@1x.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="terrafromdescription">
+                <div class="inner">
+                    <div class="content">
+                        <p>When design is intuitive, people are inspired to move forward. They’re understood and their behavior is anticipated. Experiences adapt to their needs, intent, and context.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="terrafrompowerful">
+                <div class="title">
+                    <div class="inner">
+                        <h2>Intuitive and<br>powerful</h2>
+                    </div>
+                </div>
+                <div class="media1">
+                    <div class="media-sc" data-aos="fade-up" data-aos-delay="1500">
+                        <img src=".//img/terraforma@1x.png" alt="Terraforma landscape">
                     </div>
                 </div>
             </div>
         </main>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         var mobile_nav_toggle = document.querySelector('.menutoggle');
         //把.menutoggle命名為Mobile_nav_toggle
@@ -182,11 +222,6 @@
         var everydevice_scroll = document.querySelector('.everydeviceinner .title');
         //把everydeviceinner.title命名为everydevice_scroll
         var everydevice_content_scroll = document.querySelector('.everydeviceinner .content')；
-
-        $(window).scroll(function() {
-        //如果视窗移到作为一个函式
-            console.log(scroll);
-        }
 
     </script>
 </body>
