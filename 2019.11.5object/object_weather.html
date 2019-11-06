@@ -74,9 +74,11 @@
                 $('.cards').append(`<div class="card">
                                         <h1>${locationName}</h1>
                                         <p>${Wx}</p>
-                                        <p>降雨率:s${Pop}%</p>
+                                        <p>降雨率:${Pop}%</p>
                                         <p>温度:${MinT} ~ ${MaxT}°C</p>
                                     </div>`)
+                        // if ${Wx} = "多雲";
+                                    
 
             });
         });
