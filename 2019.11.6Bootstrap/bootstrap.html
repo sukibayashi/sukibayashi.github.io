@@ -15,39 +15,39 @@
 
 
     <style>
-        body {
+        .info {
             overflow: hidden;
-        }
-
-        .row {
-            width: 100%;
-            height: 100%;
             position: relative;
         }
 
-        .row .col-xl-3 {
-            padding-right: 0px;
-            padding-left: 0px;
-        }
-
-        .row::before {
+        .info::before {
             content: "";
+            display: block;
             width: 50%;
             height: 100%;
-            position: absolute;
-            top: 0px;
-            left: -50%;
             background-color: rgb(34, 128, 200);
+            position: absolute;
+            left: 0;
+            top: 0;
         }
 
-        .row::after {
+        .info::after {
             content: "";
+            display: block;
             width: 50%;
             height: 100%;
-            position: absolute;
-            top: 0px;
-            right: -50%;
             background-color: rgb(95, 207, 99);
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .container .row .col-xl-3 {
+            width: 25%;
+            height: 325px;
+            position: relative;
+            z-index: 2;
         }
 
         .row .col-xl-3:nth-child(1) {
@@ -69,21 +69,18 @@
         .row .col-xl-3 .img {
             min-height: 96px;
             width: 100%;
-            text-align: left;
-            flex: 1 1 auto;
-            padding: 26px;
+            margin-bottom: 80px;
         }
 
         .row .col-xl-3 img {
-            width: 25%;
-            padding: 35px 0px;
+            width: 20%;
+            margin: 20px 5px;
         }
 
         .row .col-xl-3 .content {
             height: 100px;
             width: 100%;
             flex: 0 0 auto;
-            padding: 0px 26px;
         }
 
         .row .col-xl-3 .content h2 {
@@ -104,12 +101,25 @@
             margin: 0px;
         }
 
-        .row .col-xl-3 span {
-            font-size: 14px;
-            padding: 0px 26px;
+        .row .col-xl-3 .action {
             height: 48px;
+            width: 100%;
+            text-align: left;
             display: flex;
             align-items: center;
+            padding: 10px 0px 0px;
+        }
+
+        .row .col-xl-3 .action img {
+            margin: 0px 16px 0px 0px;
+            width: 18px;
+        }
+
+        .row .col-xl-3 span {
+            font-size: 16px;
+            font-family: "Segoe UI Mono", mono;
+            letter-spacing: 0.01rem;
+            color: rgb(0, 0, 0);
         }
     </style>
 
@@ -118,60 +128,70 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row" >
-            <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-duration="3000" >
-                <div class="img" >
-                    <img src="./svg/icon-globe.svg" alt="">
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="img">
+                        <img src="./svg/icon-globe.svg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Web</h2>
+                        <p>Create your own web apps and add-ins.</p>
+                    </div>
+                    <div class="action">
+                        <img src="./svg/arrow-black.svg" alt="">
+                        <span>Get started</span>
+                    </div>
                 </div>
-                <div class="content">
-                    <h2>Web</h2>
-                    <p>Create your own web apps and add-ins.</p>
+                <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
+                    <div class="img">
+                        <img src="./svg/icon-windows.svg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Windows</h2>
+                        <p>Create and publish your own Windows apps.</p>
+                    </div>
+                    <div class="action">
+                        <img src="./svg/arrow-black.svg" alt="">
+                        <span>Get started</span>
+                    </div>
                 </div>
-                <div class="action">
-                    
-                    <span>Get started</span>
+                <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1500">
+                    <div class="img">
+                        <img src="./svg/icon-ios.svg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>iOS</h2>
+                        <p>Take your custom apps to the mobile market.</p>
+                    </div>
+                    <div class="action">
+                        <img src="./svg/arrow-black.svg" alt="">
+                        <span>Get started</span>
+                    </div>
                 </div>
-
-            </div>
-            <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
-                <div class="img">
-                    <img src="./svg/icon-windows.svg" alt="">
-                </div>
-                <div class="content">
-                    <h2>Windows</h2>
-                    <p>Create and publish your own Windows apps.</p>
-                </div>
-                <span>Get started</span>
-            </div>
-            <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1500">
-                <div class="img">
-                    <img src="./svg/icon-ios.svg" alt="">
-                </div>
-                <div class="content">
-                    <h2>iOS</h2>
-                    <p>Take your custom apps to the mobile market.</p>
-                </div>
-                <span>Get started</span>
-            </div>
-            <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">
-                <div class="img">
-                    <img src="./svg/icon-android.svg" alt="">
-                </div>
-                <div class="content">
+                <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">
+                    <div class="img">
+                        <img src="./svg/icon-android.svg" alt="">
+                    </div>
+                    <div class="content">
                         <h2>Android</h2>
                         <p>Take your custom apps to the mobile market.</p>
+                    </div>
+                    <div class="action">
+                        <img src="./svg/arrow-black.svg" alt="">
+                        <span>Get started</span>
+                    </div>
                 </div>
-                <span>Get started</span>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-            AOS.init();
+        AOS.init();
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
