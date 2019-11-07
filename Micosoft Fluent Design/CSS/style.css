@@ -751,7 +751,131 @@ main{
     position: relative;
     align-self: center;
 }
+/* terrafrompowerful */
 
+/* .stylecloud */
+.stylecloud{
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    min-height: 948px;
+    background: url(https://www.microsoft.com/design/fluent/assets/images/clouds.jpg) 50% center / cover no-repeat fixed rgb(0, 0, 0);
+}
+
+.stylecloud .inner{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.stylecloud .inner .planes{
+    position: absolute;
+    top: -240px;
+    right: -260px;
+    width: 768px;
+}
+
+.stylecloud .inner .planes .SolidPlane{
+    position: absolute;
+    top: -120px;
+    left: 2px;
+    z-index: 2;
+    opacity: 1;
+    transform: translate3d(0px, -29.5905px, 0px);
+}
+
+.stylecloud .inner .planes .OutlinePlane{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.stylecloud .inner .DeHeader{
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.stylecloud .inner .SignHeader{
+    position: absolute;
+    top: 140px;
+    right: -30px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.stylecloud .inner .line{
+    position: absolute;
+    top: 550px;
+    left: 370px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+/* .stylecloud */
+
+.StyledEngagingImmersive{
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    min-height: 820px;
+    position: relative;
+}
+
+.StyledEngagingImmersive .inner{
+    width: 1536px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.StyledEngagingImmersive .inner .title{
+    width: 100%;
+    padding: 140px 40px 0px 8px;
+}
+
+.StyledEngagingImmersive .inner .title .heading{
+    color: rgb(0, 0, 0);
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 600;
+}
+
+.StyledEngagingImmersive .inner .content{
+    width: 100%;
+    margin: 60px 0px 0px;
+}
+
+.StyledEngagingImmersive .inner .content .ContentBlock{
+    width: 100%;
+    max-width: 384px;
+    padding: 0px 16px;
+}
+
+.StyledEngagingImmersive .inner .content .ContentBlock p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.StyledEngagingImmersive .media-sc{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+
+.StyledEngagingImmersive .media-sc img{
+    max-width: 900px;
+}
 
 @media (max-width:1680px){
     .contanier{
