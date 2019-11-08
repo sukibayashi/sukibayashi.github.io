@@ -823,6 +823,7 @@ main{
 }
 /* .stylecloud */
 
+/* StyledEngagingImmersive */
 .StyledEngagingImmersive{
     width: 100%;
     background-color: rgb(204, 204, 204);
@@ -841,11 +842,14 @@ main{
     padding: 140px 40px 0px 8px;
 }
 
-.StyledEngagingImmersive .inner .title .heading{
+.StyledEngagingImmersive .inner .title h2{
     color: rgb(0, 0, 0);
     font-size: 128px;
     line-height: 150px;
     font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0px;
 }
 
 .StyledEngagingImmersive .inner .content{
@@ -876,6 +880,456 @@ main{
 .StyledEngagingImmersive .media-sc img{
     max-width: 900px;
 }
+
+/* StyledEngagingImmersive */
+
+/* StyledSpace */
+.StyledSpace{
+    width: 100%;
+    min-height: 768px;
+    background: url(https://www.microsoft.com/design/fluent/assets/images/space.jpg) 50% center / cover no-repeat fixed rgb(0, 0, 0);
+}
+
+.StyledSpace .inner{
+    position: relative;
+    z-index: 2;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.StyledSpace .inner .fluent{
+    position: absolute;
+    top: -95px;
+    left: 340px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.StyledSpace .inner .line{
+    position: absolute;
+    top: 185px;
+    left: 165px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.StyledSpace .inner .WhiteRect{
+    position: absolute;
+    top: -125px;
+    left: 620px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.StyledSpace .inner .WhitePlane{
+    position: absolute;
+    top: 530px;
+    right: 85px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.StyledSpace .inner .LilacRect{
+    position: absolute;
+    top: 370px;
+    right: 220px;
+    pointer-events: none;
+    transform: translateY(-100px);
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+/* StyledSpace */
+
+/* StyledMedia */
+.StyledMedia{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: 0px 0px 160px;
+}
+
+.StyledMedia .inner{
+    position: relative;
+    z-index: 2;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.StyledMedia .inner .Grid{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+/* ----------------------------------------------------------- */
+.StyledMedia .inner .Grid .how{
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+
+.StyledMedia .inner .Grid .how:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.StyledMedia .inner .Grid .how:hover a .content p{
+    color:black;
+}
+
+.StyledMedia .inner .Grid .how a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .how a .content{
+    width: 100%;
+    padding: 16px;
+    flex: 1 1 auto;
+    margin: 2px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .how a .content p{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .how a .source{
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex: 0 0 auto;
+}
+
+.StyledMedia .inner .Grid .how a .source .icon{
+    width: 24px;
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .how a .source .icon svg{
+    max-width: 20px;
+    height: auto;
+}
+
+.StyledMedia .inner .Grid .how a .source .icon svg path{
+    fill: rgb(255, 255, 255);
+    transition: fill 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .how a .source .title{
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.StyledMedia .inner .Grid .how a .source .title label{
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+/* ----------------------------------------------------------- */
+.StyledMedia .inner .Grid .evo{
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(57, 57, 57);
+}
+
+.StyledMedia .inner .Grid .evo:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.StyledMedia .inner .Grid .evo:hover  a .content p{
+    color:black;
+}
+
+.StyledMedia .inner .Grid .evo a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .evo a .content{
+    width: 100%;
+    padding: 16px;
+    flex: 1 1 auto;
+    margin: 2px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .evo a .content p{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .evo a .source{
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex: 0 0 auto;
+}
+
+.StyledMedia .inner .Grid .evo a .source .icon{
+    width: 24px;
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .evo a .source .icon svg{
+    max-width: 20px;
+    height: auto;
+}
+
+.StyledMedia .inner .Grid .evo a .source .icon svg path{
+    fill: rgb(255, 255, 255);
+    transition: fill 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .evo a .source .title{
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.StyledMedia .inner .Grid .evo a .source .title label{
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+/* ----------------------------------------------------------- */
+.StyledMedia .inner .Grid .scale{
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    background-color:rgb(118, 118, 118);
+}
+
+.StyledMedia .inner .Grid .scale:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.StyledMedia .inner .Grid .scale a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .scale a .content{
+    width: 100%;
+    padding: 16px;
+    flex: 1 1 auto;
+    margin: 2px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .scale a .content p{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    transition: color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .scale a .source{
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex: 0 0 auto;
+}
+
+.StyledMedia .inner .Grid .scale a .source .icon{
+    width: 24px;
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .scale a .source .icon svg{
+    max-width: 20px;
+    height: auto;
+}
+
+.StyledMedia .inner .Grid .scale a .source .icon svg path{
+    fill: rgb(255, 255, 255);
+    transition: fill 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .scale a .source .title{
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.StyledMedia .inner .Grid .scale a .source .title label{
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+/* ----------------------------------------------------------- */
+.StyledMedia .inner .Grid .power{
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    background-color:rgb(204, 204, 204);
+}
+
+.StyledMedia .inner .Grid .power:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.StyledMedia .inner .Grid .power a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .power a .content{
+    width: 100%;
+    padding: 16px;
+    flex: 1 1 auto;
+    margin: 2px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .power a .content p{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    transition: color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .power a .source{
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex: 0 0 auto;
+}
+
+.StyledMedia .inner .Grid .power a .source .icon{
+    width: 24px;
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .power a .source .icon svg{
+    max-width: 20px;
+    height: auto;
+}
+
+.StyledMedia .inner .Grid .power a .source .icon svg path{
+    fill: rgb(255, 255, 255);
+    transition: fill 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .power a .source .title{
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.StyledMedia .inner .Grid .power a .source .title label{
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+/* StyledMedia */
+
+/* StyledNews */
+.StyledNews{
+    width: 100%;
+}
+
+.StyledNews .inner{
+    width: 1336px;
+}
+
+.StyledNews .inner .newslist{
+    width: 100%;
+}
+
+.StyledNews .inner .newslist .newsitem{
+    width: 100%;
+    display: flex;
+    padding: 0px 0px 200px;
+}
+
+.StyledNews .inner .newslist .newsitem .title{
+    width: 50%;
+    flex: 0 0 auto;
+}
+
+.StyledNews .inner .newslist .newsitem .title h2{
+    font-size: 32px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 0px 0px 0px 16px;
+}
+
+.StyledNews .inner .newslist .newsitem .content{
+    width: 50%;
+    padding: 0px 16px 35px;
+}
+
+.StyledNews .inner .newslist .newsitem .content .text{
+    width: 100%;
+}
+
+.StyledNews .inner .newslist .newsitem .content .text p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.StyledNews .inner .newslist .newsitem .content .action{
+    width: 100%;
+    margin: 70px 0px 0px;
+}
+
+.StyledNews .inner .newslist .newsitem .content .action a{
+    display: flex;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.StyledNews .inner .newslist .newsitem .content .action:hover{
+    filter: opacity(55%)
+}
+
+.StyledNews .inner .newslist .newsitem .content .action a img{
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledNews .inner .newslist .newsitem .content .action a span{
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    line-height: 1;
+}
+
+
 
 @media (max-width:1680px){
     .contanier{
