@@ -1,17 +1,17 @@
-*{
+* {
     box-sizing: border-box;
-    
+
 }
 
-body{
+body {
     height: 100%;
     display: block;
-    margin:0;
+    margin: 0;
     padding: 0;
     background-color: black;
 }
 
-#root{
+#root {
     font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 14px;
@@ -20,24 +20,24 @@ body{
 }
 
 /* nav */
-header{
-    width:100%;
-    height:48px;
+header {
+    width: 100%;
+    height: 48px;
     position: absolute;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     z-index: 10;
     background-color: transparent;
 }
 
-.contanier{
+.contanier {
     max-width: 1536px;
     display: flex;
-    margin:0 auto;
+    margin: 0 auto;
 
 }
 
-.logo{
+.logo {
     width: 190px;
     height: 48px;
     display: flex;
@@ -48,52 +48,58 @@ header{
     flex: 0 0 auto;
 }
 
-.logo svg{
+.logo svg {
     width: 16px;
 }
-.logo svg .microsoft-red{
+
+.logo svg .microsoft-red {
     fill: rgb(255, 255, 255);
     transition: all 200ms linear 0ms;
 }
-.logo svg .microsoft-green{
+
+.logo svg .microsoft-green {
     fill: rgb(255, 255, 255);
     transition: all 200ms linear 0ms;
 }
-.logo svg .microsoft-blue{
+
+.logo svg .microsoft-blue {
     fill: rgb(255, 255, 255);
     transition: all 200ms linear 0ms;
 }
-.logo svg .microsoft-yellow{
+
+.logo svg .microsoft-yellow {
     fill: rgb(255, 255, 255);
     transition: all 200ms linear 0ms;
 }
 
 
-.sitetitle{
+.sitetitle {
     height: 48px;
     width: auto;
     align-content: center;
     flex: 0 0 auto;
 }
-.sitetitle h1{
+
+.sitetitle h1 {
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 600;
     line-height: 25px;
 }
-.sitetitle h1 a{
+
+.sitetitle h1 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 200ms linear 0ms;
 }
 
-.navigation{
+.navigation {
     height: 48px;
     flex: 1 1 auto;
     padding: 0px 120px 0px 420px;
 }
 
-.navigation ul{
+.navigation ul {
     width: 100%;
     display: flex;
     -webkit-box-pack: justify;
@@ -102,7 +108,8 @@ header{
     padding: 0px;
     list-style: none;
 }
-.navigation ul li{
+
+.navigation ul li {
     width: auto;
     color: rgb(255, 255, 255);
     font-size: 16px;
@@ -111,13 +118,14 @@ header{
     margin: 0px;
     padding: 0px;
 }
-.navigation ul li a{
+
+.navigation ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: all 200ms linear 0ms;
 }
 
-.mobilemenu{
+.mobilemenu {
     opacity: 0;
     pointer-events: none;
     position: fixed;
@@ -132,13 +140,14 @@ header{
 }
 
 
-ul{
+ul {
     width: 100%;
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
-.menulistitem{
+
+.menulistitem {
     transform: translateY(0px);
     width: 100%;
     font-size: 20px;
@@ -147,7 +156,8 @@ ul{
     margin: 0px;
     transition: all 300ms ease 0ms;
 }
-.menulistitem2{
+
+.menulistitem2 {
     transform: translateY(0px);
     width: 100%;
     font-size: 20px;
@@ -156,7 +166,8 @@ ul{
     margin: 0px;
     transition: all 300ms ease 0ms;
 }
-.menulistitem3{
+
+.menulistitem3 {
     transform: translateY(0px);
     width: 100%;
     font-size: 20px;
@@ -165,7 +176,8 @@ ul{
     margin: 0px;
     transition: all 300ms ease 0ms;
 }
-.menulistitem4{
+
+.menulistitem4 {
     transform: translateY(0px);
     width: 100%;
     font-size: 20px;
@@ -177,39 +189,45 @@ ul{
 
 
 
-ul li a{
+ul li a {
     color: rgb(255, 255, 255);
     position: relative;
     display: block;
     text-decoration: none;
     padding: 25px 30px;
 }
+
 /* nav */
 
-main{
+main {
     width: 100%;
     position: relative;
     overflow-x: hidden;
     margin: 48px 0px 0px;
 }
+
 /* top */
-.introduction{
+.introduction {
     width: 100%;
     margin: 145px 0px 60px;
 }
-.intrmain{
+
+.intrmain {
     display: flex;
     width: 1536px;
     margin: 0px auto;
 }
-.content{
+
+.content {
     width: 410px;
     flex: 0 0 auto;
 }
-.content .title{
+
+.content .title {
     width: 100%;
 }
-.content .title h2{
+
+.content .title h2 {
     font-size: 64px;
     line-height: 80px;
     color: rgb(79, 229, 255);
@@ -217,15 +235,17 @@ main{
     margin: 0px 0px 0px -6px;
 }
 
-.description{
+.description {
     width: 100%;
     margin: 100px 0px 30px;
 }
-.descriptionmain{
+
+.descriptionmain {
     width: 100%;
     max-width: 352px;
 }
-.descriptionmain p{
+
+.descriptionmain p {
     color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 24px;
@@ -233,40 +253,42 @@ main{
     margin: 0px 0px 24px;
 }
 
-.media-sc{
+.media-sc {
     text-align: center;
     position: relative;
     flex: 1 1 auto;
 }
 
-.media-sc .leftLine{
+.media-sc .leftLine {
     position: absolute;
     top: -15px;
     right: 180px;
     pointer-events: none;
 }
 
-.media-sc .rightLine{
+.media-sc .rightLine {
     position: absolute;
     bottom: 155px;
     left: 180px;
     pointer-events: none;
 }
 
-.media-sc .png{
-    width:354px;
-    height:603px;
+.media-sc .png {
+    width: 354px;
+    height: 603px;
     position: relative;
-    left:386px;
-    background-image: url('../img/icon-fluent@1x.png');   
+    left: 386px;
+    background-image: url('../img/icon-fluent@1x.png');
 }
+
 /* top */
 
-.platforms{
+.platforms {
     width: 100%;
-    position: relative; 
+    position: relative;
 }
-.platforms::before{
+
+.platforms::before {
     content: "";
     width: 50vw;
     height: 100%;
@@ -276,26 +298,29 @@ main{
     z-index: 1;
     background-color: rgb(34, 128, 200);
 }
-.platforms .inner{
+
+.platforms .inner {
     display: flex;
     flex-wrap: wrap;
     width: 1536px;
     margin: 0px auto;
 }
-.platforms .inner .innermain{
+
+.platforms .inner .innermain {
     width: 100%;
     display: flex;
     position: relative;
 }
 
 /* web */
-.innermain .web{
+.innermain .web {
     width: 25%;
     height: 384px;
     position: relative;
     z-index: 2;
 }
-.innermain .web .webmain{
+
+.innermain .web .webmain {
     background-color: rgb(37, 142, 222);
     width: 100%;
     height: 100%;
@@ -303,24 +328,28 @@ main{
     flex-direction: column;
     text-decoration: none;
 }
-.innermain .web .webmain .icon{
+
+.innermain .web .webmain .icon {
     min-height: 96px;
     width: 100%;
     text-align: left;
     flex: 1 1 auto;
     padding: 26px;
 }
-.webmain .icon img{
+
+.webmain .icon img {
     max-width: 100%;
     max-height: 100%;
 }
-.webmain .content{
+
+.webmain .content {
     height: 100px;
     width: 100%;
     flex: 0 0 auto;
     padding: 0px 26px;
 }
-.webmain .content h2{
+
+.webmain .content h2 {
     color: rgb(0, 0, 0);
     font-size: 32px;
     letter-spacing: -0.03rem;
@@ -328,7 +357,8 @@ main{
     font-weight: 600;
     margin: 0px 0px 26px;
 }
-.webmain .content p{
+
+.webmain .content p {
     color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 20px;
@@ -336,7 +366,7 @@ main{
     margin: 0px;
 }
 
-.webmain .action{
+.webmain .action {
     height: 48px;
     width: 100%;
     text-align: left;
@@ -346,26 +376,29 @@ main{
     flex: 0 0 auto;
     padding: 0px 26px 10px;
 }
-.webmain .action img{
+
+.webmain .action img {
     margin: 0px 16px 0px 0px;
 }
 
-.webmain .action span{
+.webmain .action span {
     font-size: 16px;
     font-family: "Segoe UI Mono", mono;
     letter-spacing: 0.01rem;
     color: rgb(0, 0, 0);
 }
+
 /* web */
 
 /* windows */
-.windows{
+.windows {
     width: 25%;
     height: 384px;
     position: relative;
     z-index: 2;
 }
-.windows_main{
+
+.windows_main {
     background-color: rgb(79, 229, 255);
     width: 100%;
     height: 100%;
@@ -373,24 +406,28 @@ main{
     flex-direction: column;
     text-decoration: none;
 }
-.windows_main .icon{
+
+.windows_main .icon {
     min-height: 96px;
     width: 100%;
     text-align: left;
     flex: 1 1 auto;
     padding: 26px;
 }
-.windows_main .icon img{
+
+.windows_main .icon img {
     max-width: 100%;
     max-height: 100%;
 }
-.windows_main .content{
+
+.windows_main .content {
     height: 100px;
     width: 100%;
     flex: 0 0 auto;
     padding: 0px 26px;
 }
-.windows_main .content h2{
+
+.windows_main .content h2 {
     color: rgb(0, 0, 0);
     font-size: 32px;
     letter-spacing: -0.03rem;
@@ -398,7 +435,8 @@ main{
     font-weight: 600;
     margin: 0px 0px 26px;
 }
-.windows_main .content p{
+
+.windows_main .content p {
     color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 20px;
@@ -406,7 +444,7 @@ main{
     margin: 0px;
 }
 
-.windows_main .action{
+.windows_main .action {
     height: 48px;
     width: 100%;
     text-align: left;
@@ -416,10 +454,12 @@ main{
     flex: 0 0 auto;
     padding: 0px 26px 10px;
 }
-.windows_main .action img{
+
+.windows_main .action img {
     margin: 0px 16px 0px 0px;
 }
-.windows_main .action span{
+
+.windows_main .action span {
     font-size: 16px;
     font-family: "Segoe UI Mono", mono;
     letter-spacing: 0.01rem;
@@ -427,13 +467,14 @@ main{
 }
 
 /* iOS */
-.iOS{
+.iOS {
     width: 25%;
     height: 384px;
     position: relative;
     z-index: 2;
 }
-.iOSmain{
+
+.iOSmain {
     background-color: rgb(207, 143, 255);
     width: 100%;
     height: 100%;
@@ -441,24 +482,28 @@ main{
     flex-direction: column;
     text-decoration: none;
 }
-.iOSmain .icon{
+
+.iOSmain .icon {
     min-height: 96px;
     width: 100%;
     text-align: left;
     flex: 1 1 auto;
     padding: 26px;
 }
-.iOSmain img{
+
+.iOSmain img {
     max-width: 100%;
     max-height: 100%;
 }
-.iOSmain .content{
+
+.iOSmain .content {
     height: 100px;
     width: 100%;
     flex: 0 0 auto;
     padding: 0px 26px;
 }
-.iOSmain .content h2{
+
+.iOSmain .content h2 {
     color: rgb(0, 0, 0);
     font-size: 32px;
     letter-spacing: -0.03rem;
@@ -466,14 +511,16 @@ main{
     font-weight: 600;
     margin: 0px 0px 26px;
 }
-.iOSmain .content p{
+
+.iOSmain .content p {
     color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
     margin: 0px;
 }
-.iOSmain .action{
+
+.iOSmain .action {
     height: 48px;
     width: 100%;
     text-align: left;
@@ -483,25 +530,29 @@ main{
     flex: 0 0 auto;
     padding: 0px 26px 10px;
 }
-.iOSmain .action img{
+
+.iOSmain .action img {
     margin: 0px 16px 0px 0px;
 }
-.iOSmain .action span{
+
+.iOSmain .action span {
     font-size: 16px;
     font-family: "Segoe UI Mono", mono;
     letter-spacing: 0.01rem;
     color: rgb(0, 0, 0);
 }
+
 /* iOS */
 
 /* android */
-.android{
+.android {
     width: 25%;
     height: 384px;
     position: relative;
     z-index: 2;
 }
-.androidmain{
+
+.androidmain {
     background-color: rgb(105, 229, 110);
     width: 100%;
     height: 100%;
@@ -509,25 +560,28 @@ main{
     flex-direction: column;
     text-decoration: none;
 }
-.androidmain .icon{
+
+.androidmain .icon {
     min-height: 96px;
     width: 100%;
     text-align: left;
     flex: 1 1 auto;
     padding: 26px;
 }
-.androidmain .icon img{
+
+.androidmain .icon img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.androidmain .content{
+.androidmain .content {
     height: 100px;
     width: 100%;
     flex: 0 0 auto;
     padding: 0px 26px;
 }
-.androidmain .content h2{
+
+.androidmain .content h2 {
     color: rgb(0, 0, 0);
     font-size: 32px;
     letter-spacing: -0.03rem;
@@ -535,7 +589,8 @@ main{
     font-weight: 600;
     margin: 0px 0px 26px;
 }
-.androidmain .content p{
+
+.androidmain .content p {
     color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 20px;
@@ -543,7 +598,7 @@ main{
     margin: 0px;
 }
 
-.androidmain .action{
+.androidmain .action {
     height: 48px;
     width: 100%;
     text-align: left;
@@ -553,17 +608,19 @@ main{
     flex: 0 0 auto;
     padding: 0px 26px 10px;
 }
-.androidmain .action img{
+
+.androidmain .action img {
     margin: 0px 16px 0px 0px;
 }
-.androidmain .action span{
+
+.androidmain .action span {
     font-size: 16px;
     font-family: "Segoe UI Mono", mono;
     letter-spacing: 0.01rem;
     color: rgb(0, 0, 0);
 }
 
-.platforms::after{
+.platforms::after {
     content: "";
     width: 50vw;
     height: 100%;
@@ -573,21 +630,22 @@ main{
     z-index: 1;
     background-color: rgb(95, 207, 99);
 }
+
 /* android */
 
 /* everydevice */
-.everydevice{
+.everydevice {
     width: 100%;
     min-height: 768px;
     background: url('../img/msft-verge-fluent.jpg') 50% center / cover no-repeat fixed rgb(204, 204, 204);
 }
 
-.everydeviceinner{
+.everydeviceinner {
     width: 1536px;
     margin: 0px auto;
 }
 
-.everydeviceinner .title{
+.everydeviceinner .title {
     width: 100%;
     opacity: 1;
     transform: translateY(20px);
@@ -595,7 +653,7 @@ main{
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 }
 
-.everydeviceinner .title h2{
+.everydeviceinner .title h2 {
     color: rgb(0, 0, 0);
     font-size: 128px;
     line-height: 150px;
@@ -605,7 +663,7 @@ main{
     border-spacing: 0px;
 }
 
-.everydeviceinner .content{
+.everydeviceinner .content {
     width: 100%;
     opacity: 1;
     transform: translateY(20px);
@@ -613,33 +671,35 @@ main{
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 }
 
-.everydeviceinner .contentblock{
+.everydeviceinner .contentblock {
     width: 100%;
     max-width: 384px;
     padding: 0px 16px 0px 24px;
 }
-.everydeviceinner .contentblock p{
+
+.everydeviceinner .contentblock p {
     color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
     margin: 0px;
 }
+
 /* everydevice */
 
 /* terrafromsphere */
-.terrafromsphere{
+.terrafromsphere {
     width: 100%;
     background-color: rgb(25, 25, 25);
 }
 
-.terrafromsphere .inner{
+.terrafromsphere .inner {
     position: relative;
     width: 1536px;
     margin: 0px auto;
 }
 
-.terrafromsphere .inner .rect{
+.terrafromsphere .inner .rect {
     position: absolute;
     top: -200px;
     right: 130px;
@@ -650,7 +710,7 @@ main{
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 }
 
-.terrafromsphere .inner .line{
+.terrafromsphere .inner .line {
     position: absolute;
     top: 570px;
     left: 190px;
@@ -659,7 +719,7 @@ main{
     transition: transform 600ms linear 0ms;
 }
 
-.terrafromsphere .inner .sphere{
+.terrafromsphere .inner .sphere {
     width: 100%;
     display: flex;
     -webkit-box-pack: center;
@@ -669,18 +729,19 @@ main{
     padding: 100px 100px 50px;
 }
 
-.terrafromsphere .inner .sphere img{
+.terrafromsphere .inner .sphere img {
     max-width: 100%;
 }
+
 /* terrafromsphere */
 
 /* terrafromdescription */
-.terrafromdescription{
+.terrafromdescription {
     width: 100%;
     background-color: rgb(25, 25, 25);
 }
 
-.terrafromdescription .inner{
+.terrafromdescription .inner {
     position: relative;
     display: flex;
     -webkit-box-pack: end;
@@ -689,29 +750,30 @@ main{
     margin: 0px auto;
 }
 
-.terrafromdescription .inner .content{
+.terrafromdescription .inner .content {
     width: 384px;
     margin: 0px 0px 50px;
     padding: 0px 16px;
 }
 
-.terrafromdescription .inner .content p{
+.terrafromdescription .inner .content p {
     color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
     margin: 0px;
 }
+
 /* terrafromdescription */
 
 /* terrafrompowerful */
-.terrafrompowerful{
+.terrafrompowerful {
     width: 100%;
     position: relative;
     background-color: rgb(25, 25, 25);
 }
 
-.terrafrompowerful .title{
+.terrafrompowerful .title {
     position: absolute;
     bottom: 80px;
     left: 0px;
@@ -719,12 +781,12 @@ main{
     z-index: 4;
 }
 
-.terrafrompowerful .title .inner{
+.terrafrompowerful .title .inner {
     width: 1536px;
     margin: 0px auto;
 }
 
-.terrafrompowerful .title .inner h2{
+.terrafrompowerful .title .inner h2 {
     color: rgb(25, 25, 25);
     font-size: 128px;
     line-height: 144px;
@@ -732,11 +794,11 @@ main{
     margin: 0px 0px 0px 26px;
 }
 
-.terrafrompowerful .media1{
+.terrafrompowerful .media1 {
     overflow-y: hidden;
 }
 
-.terrafrompowerful .media1 .media-sc{
+.terrafrompowerful .media1 .media-sc {
     width: 100%;
     display: flex;
     -webkit-box-pack: center;
@@ -745,16 +807,17 @@ main{
     overflow: hidden;
 }
 
-.terrafrompowerful .media1 .media-sc img{
+.terrafrompowerful .media1 .media-sc img {
     width: 100%;
     min-width: 2000px;
     position: relative;
     align-self: center;
 }
+
 /* terrafrompowerful */
 
 /* .stylecloud */
-.stylecloud{
+.stylecloud {
     position: relative;
     top: 0px;
     z-index: 2;
@@ -763,7 +826,7 @@ main{
     background: url(https://www.microsoft.com/design/fluent/assets/images/clouds.jpg) 50% center / cover no-repeat fixed rgb(0, 0, 0);
 }
 
-.stylecloud .inner{
+.stylecloud .inner {
     position: relative;
     display: flex;
     height: 100%;
@@ -771,14 +834,14 @@ main{
     margin: 0px auto;
 }
 
-.stylecloud .inner .planes{
+.stylecloud .inner .planes {
     position: absolute;
     top: -240px;
     right: -260px;
     width: 768px;
 }
 
-.stylecloud .inner .planes .SolidPlane{
+.stylecloud .inner .planes .SolidPlane {
     position: absolute;
     top: -120px;
     left: 2px;
@@ -787,14 +850,14 @@ main{
     transform: translate3d(0px, -29.5905px, 0px);
 }
 
-.stylecloud .inner .planes .OutlinePlane{
+.stylecloud .inner .planes .OutlinePlane {
     position: absolute;
     top: 0px;
     left: 0px;
     z-index: 1;
 }
 
-.stylecloud .inner .DeHeader{
+.stylecloud .inner .DeHeader {
     position: absolute;
     top: -100px;
     left: 0px;
@@ -804,7 +867,7 @@ main{
     font-weight: 600;
 }
 
-.stylecloud .inner .SignHeader{
+.stylecloud .inner .SignHeader {
     position: absolute;
     top: 140px;
     right: -30px;
@@ -814,35 +877,36 @@ main{
     font-weight: 600;
 }
 
-.stylecloud .inner .line{
+.stylecloud .inner .line {
     position: absolute;
     top: 550px;
     left: 370px;
     pointer-events: none;
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 }
+
 /* .stylecloud */
 
 /* StyledEngagingImmersive */
-.StyledEngagingImmersive{
+.StyledEngagingImmersive {
     width: 100%;
     background-color: rgb(204, 204, 204);
     min-height: 820px;
     position: relative;
 }
 
-.StyledEngagingImmersive .inner{
+.StyledEngagingImmersive .inner {
     width: 1536px;
     position: relative;
     margin: 0px auto;
 }
 
-.StyledEngagingImmersive .inner .title{
+.StyledEngagingImmersive .inner .title {
     width: 100%;
     padding: 140px 40px 0px 8px;
 }
 
-.StyledEngagingImmersive .inner .title h2{
+.StyledEngagingImmersive .inner .title h2 {
     color: rgb(0, 0, 0);
     font-size: 128px;
     line-height: 150px;
@@ -852,18 +916,18 @@ main{
     border-spacing: 0px;
 }
 
-.StyledEngagingImmersive .inner .content{
+.StyledEngagingImmersive .inner .content {
     width: 100%;
     margin: 60px 0px 0px;
 }
 
-.StyledEngagingImmersive .inner .content .ContentBlock{
+.StyledEngagingImmersive .inner .content .ContentBlock {
     width: 100%;
     max-width: 384px;
     padding: 0px 16px;
 }
 
-.StyledEngagingImmersive .inner .content .ContentBlock p{
+.StyledEngagingImmersive .inner .content .ContentBlock p {
     color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 24px;
@@ -871,33 +935,33 @@ main{
     margin: 0px;
 }
 
-.StyledEngagingImmersive .media-sc{
+.StyledEngagingImmersive .media-sc {
     position: absolute;
     top: 200px;
     right: 0px;
 }
 
-.StyledEngagingImmersive .media-sc img{
+.StyledEngagingImmersive .media-sc img {
     max-width: 900px;
 }
 
 /* StyledEngagingImmersive */
 
 /* StyledSpace */
-.StyledSpace{
+.StyledSpace {
     width: 100%;
     min-height: 768px;
     background: url(https://www.microsoft.com/design/fluent/assets/images/space.jpg) 50% center / cover no-repeat fixed rgb(0, 0, 0);
 }
 
-.StyledSpace .inner{
+.StyledSpace .inner {
     position: relative;
     z-index: 2;
     width: 1536px;
     margin: 0px auto;
 }
 
-.StyledSpace .inner .fluent{
+.StyledSpace .inner .fluent {
     position: absolute;
     top: -95px;
     left: 340px;
@@ -905,7 +969,7 @@ main{
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 }
 
-.StyledSpace .inner .line{
+.StyledSpace .inner .line {
     position: absolute;
     top: 185px;
     left: 165px;
@@ -913,7 +977,7 @@ main{
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 }
 
-.StyledSpace .inner .WhiteRect{
+.StyledSpace .inner .WhiteRect {
     position: absolute;
     top: -125px;
     left: 620px;
@@ -921,7 +985,7 @@ main{
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 }
 
-.StyledSpace .inner .WhitePlane{
+.StyledSpace .inner .WhitePlane {
     position: absolute;
     top: 530px;
     right: 85px;
@@ -929,7 +993,7 @@ main{
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 }
 
-.StyledSpace .inner .LilacRect{
+.StyledSpace .inner .LilacRect {
     position: absolute;
     top: 370px;
     right: 220px;
@@ -937,31 +1001,32 @@ main{
     transform: translateY(-100px);
     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 }
+
 /* StyledSpace */
 
 /* StyledMedia */
-.StyledMedia{
+.StyledMedia {
     position: relative;
     width: 100%;
     z-index: 1;
     margin: 0px 0px 160px;
 }
 
-.StyledMedia .inner{
+.StyledMedia .inner {
     position: relative;
     z-index: 2;
     width: 1536px;
     margin: 0px auto;
 }
 
-.StyledMedia .inner .Grid{
+.StyledMedia .inner .Grid {
     width: 100%;
     display: flex;
     position: relative;
 }
 
 /* ----------------------------------------------------------- */
-.StyledMedia .inner .Grid .how{
+.StyledMedia .inner .Grid .how {
     width: 25%;
     height: 384px;
     position: relative;
@@ -969,16 +1034,16 @@ main{
     background-color: rgb(0, 0, 0);
 }
 
-.StyledMedia .inner .Grid .how:hover{
+.StyledMedia .inner .Grid .how:hover {
     background-color: white;
     transition: 0.5s;
 }
 
-.StyledMedia .inner .Grid .how:hover a .content p{
-    color:black;
+.StyledMedia .inner .Grid .how:hover a .content p {
+    color: black;
 }
 
-.StyledMedia .inner .Grid .how a{
+.StyledMedia .inner .Grid .how a {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -987,14 +1052,14 @@ main{
     transition: background-color 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .how a .content{
+.StyledMedia .inner .Grid .how a .content {
     width: 100%;
     padding: 16px;
     flex: 1 1 auto;
     margin: 2px 0px 0px;
 }
 
-.StyledMedia .inner .Grid .how a .content p{
+.StyledMedia .inner .Grid .how a .content p {
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
@@ -1002,41 +1067,42 @@ main{
     transition: color 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .how a .source{
+.StyledMedia .inner .Grid .how a .source {
     width: 100%;
     display: flex;
     padding: 16px;
     flex: 0 0 auto;
 }
 
-.StyledMedia .inner .Grid .how a .source .icon{
+.StyledMedia .inner .Grid .how a .source .icon {
     width: 24px;
     flex: 0 0 auto;
     margin: 0px 16px 0px 0px;
 }
 
-.StyledMedia .inner .Grid .how a .source .icon svg{
+.StyledMedia .inner .Grid .how a .source .icon svg {
     max-width: 20px;
     height: auto;
 }
 
-.StyledMedia .inner .Grid .how a .source .icon svg path{
+.StyledMedia .inner .Grid .how a .source .icon svg path {
     fill: rgb(255, 255, 255);
     transition: fill 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .how a .source .title{
+.StyledMedia .inner .Grid .how a .source .title {
     -webkit-box-align: center;
     align-items: center;
     flex: 1 1 auto;
 }
 
-.StyledMedia .inner .Grid .how a .source .title label{
+.StyledMedia .inner .Grid .how a .source .title label {
     color: rgb(255, 255, 255);
     transition: color 200ms linear 0ms;
 }
+
 /* ----------------------------------------------------------- */
-.StyledMedia .inner .Grid .evo{
+.StyledMedia .inner .Grid .evo {
     width: 25%;
     height: 384px;
     position: relative;
@@ -1044,16 +1110,16 @@ main{
     background-color: rgb(57, 57, 57);
 }
 
-.StyledMedia .inner .Grid .evo:hover{
+.StyledMedia .inner .Grid .evo:hover {
     background-color: white;
     transition: 0.5s;
 }
 
-.StyledMedia .inner .Grid .evo:hover  a .content p{
-    color:black;
+.StyledMedia .inner .Grid .evo:hover a .content p {
+    color: black;
 }
 
-.StyledMedia .inner .Grid .evo a{
+.StyledMedia .inner .Grid .evo a {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1062,14 +1128,14 @@ main{
     transition: background-color 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .evo a .content{
+.StyledMedia .inner .Grid .evo a .content {
     width: 100%;
     padding: 16px;
     flex: 1 1 auto;
     margin: 2px 0px 0px;
 }
 
-.StyledMedia .inner .Grid .evo a .content p{
+.StyledMedia .inner .Grid .evo a .content p {
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
@@ -1077,54 +1143,55 @@ main{
     transition: color 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .evo a .source{
+.StyledMedia .inner .Grid .evo a .source {
     width: 100%;
     display: flex;
     padding: 16px;
     flex: 0 0 auto;
 }
 
-.StyledMedia .inner .Grid .evo a .source .icon{
+.StyledMedia .inner .Grid .evo a .source .icon {
     width: 24px;
     flex: 0 0 auto;
     margin: 0px 16px 0px 0px;
 }
 
-.StyledMedia .inner .Grid .evo a .source .icon svg{
+.StyledMedia .inner .Grid .evo a .source .icon svg {
     max-width: 20px;
     height: auto;
 }
 
-.StyledMedia .inner .Grid .evo a .source .icon svg path{
+.StyledMedia .inner .Grid .evo a .source .icon svg path {
     fill: rgb(255, 255, 255);
     transition: fill 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .evo a .source .title{
+.StyledMedia .inner .Grid .evo a .source .title {
     -webkit-box-align: center;
     align-items: center;
     flex: 1 1 auto;
 }
 
-.StyledMedia .inner .Grid .evo a .source .title label{
+.StyledMedia .inner .Grid .evo a .source .title label {
     color: rgb(255, 255, 255);
     transition: color 200ms linear 0ms;
 }
+
 /* ----------------------------------------------------------- */
-.StyledMedia .inner .Grid .scale{
+.StyledMedia .inner .Grid .scale {
     width: 25%;
     height: 384px;
     position: relative;
     z-index: 2;
-    background-color:rgb(118, 118, 118);
+    background-color: rgb(118, 118, 118);
 }
 
-.StyledMedia .inner .Grid .scale:hover{
+.StyledMedia .inner .Grid .scale:hover {
     background-color: white;
     transition: 0.5s;
 }
 
-.StyledMedia .inner .Grid .scale a{
+.StyledMedia .inner .Grid .scale a {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1133,14 +1200,14 @@ main{
     transition: background-color 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .scale a .content{
+.StyledMedia .inner .Grid .scale a .content {
     width: 100%;
     padding: 16px;
     flex: 1 1 auto;
     margin: 2px 0px 0px;
 }
 
-.StyledMedia .inner .Grid .scale a .content p{
+.StyledMedia .inner .Grid .scale a .content p {
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
@@ -1148,54 +1215,55 @@ main{
     transition: color 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .scale a .source{
+.StyledMedia .inner .Grid .scale a .source {
     width: 100%;
     display: flex;
     padding: 16px;
     flex: 0 0 auto;
 }
 
-.StyledMedia .inner .Grid .scale a .source .icon{
+.StyledMedia .inner .Grid .scale a .source .icon {
     width: 24px;
     flex: 0 0 auto;
     margin: 0px 16px 0px 0px;
 }
 
-.StyledMedia .inner .Grid .scale a .source .icon svg{
+.StyledMedia .inner .Grid .scale a .source .icon svg {
     max-width: 20px;
     height: auto;
 }
 
-.StyledMedia .inner .Grid .scale a .source .icon svg path{
+.StyledMedia .inner .Grid .scale a .source .icon svg path {
     fill: rgb(255, 255, 255);
     transition: fill 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .scale a .source .title{
+.StyledMedia .inner .Grid .scale a .source .title {
     -webkit-box-align: center;
     align-items: center;
     flex: 1 1 auto;
 }
 
-.StyledMedia .inner .Grid .scale a .source .title label{
+.StyledMedia .inner .Grid .scale a .source .title label {
     color: rgb(255, 255, 255);
     transition: color 200ms linear 0ms;
 }
+
 /* ----------------------------------------------------------- */
-.StyledMedia .inner .Grid .power{
+.StyledMedia .inner .Grid .power {
     width: 25%;
     height: 384px;
     position: relative;
     z-index: 2;
-    background-color:rgb(204, 204, 204);
+    background-color: rgb(204, 204, 204);
 }
 
-.StyledMedia .inner .Grid .power:hover{
+.StyledMedia .inner .Grid .power:hover {
     background-color: white;
     transition: 0.5s;
 }
 
-.StyledMedia .inner .Grid .power a{
+.StyledMedia .inner .Grid .power a {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1204,14 +1272,14 @@ main{
     transition: background-color 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .power a .content{
+.StyledMedia .inner .Grid .power a .content {
     width: 100%;
     padding: 16px;
     flex: 1 1 auto;
     margin: 2px 0px 0px;
 }
 
-.StyledMedia .inner .Grid .power a .content p{
+.StyledMedia .inner .Grid .power a .content p {
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
@@ -1219,66 +1287,68 @@ main{
     transition: color 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .power a .source{
+.StyledMedia .inner .Grid .power a .source {
     width: 100%;
     display: flex;
     padding: 16px;
     flex: 0 0 auto;
 }
 
-.StyledMedia .inner .Grid .power a .source .icon{
+.StyledMedia .inner .Grid .power a .source .icon {
     width: 24px;
     flex: 0 0 auto;
     margin: 0px 16px 0px 0px;
 }
 
-.StyledMedia .inner .Grid .power a .source .icon svg{
+.StyledMedia .inner .Grid .power a .source .icon svg {
     max-width: 20px;
     height: auto;
 }
 
-.StyledMedia .inner .Grid .power a .source .icon svg path{
+.StyledMedia .inner .Grid .power a .source .icon svg path {
     fill: rgb(255, 255, 255);
     transition: fill 200ms linear 0ms;
 }
 
-.StyledMedia .inner .Grid .power a .source .title{
+.StyledMedia .inner .Grid .power a .source .title {
     -webkit-box-align: center;
     align-items: center;
     flex: 1 1 auto;
 }
 
-.StyledMedia .inner .Grid .power a .source .title label{
+.StyledMedia .inner .Grid .power a .source .title label {
     color: rgb(255, 255, 255);
     transition: color 200ms linear 0ms;
 }
+
 /* StyledMedia */
 
 /* StyledNews */
-.StyledNews{
+.StyledNews {
     width: 100%;
 }
 
-.StyledNews .inner{
+.StyledNews .inner {
     width: 1336px;
+    margin: 0px auto;
 }
 
-.StyledNews .inner .newslist{
+.StyledNews .inner .newslist {
     width: 100%;
 }
 
-.StyledNews .inner .newslist .newsitem{
+.StyledNews .inner .newslist .newsitem {
     width: 100%;
     display: flex;
     padding: 0px 0px 200px;
 }
 
-.StyledNews .inner .newslist .newsitem .title{
+.StyledNews .inner .newslist .newsitem .title {
     width: 50%;
     flex: 0 0 auto;
 }
 
-.StyledNews .inner .newslist .newsitem .title h2{
+.StyledNews .inner .newslist .newsitem .title h2 {
     font-size: 32px;
     line-height: 40px;
     color: rgb(255, 255, 255);
@@ -1286,43 +1356,43 @@ main{
     padding: 0px 0px 0px 16px;
 }
 
-.StyledNews .inner .newslist .newsitem .content{
+.StyledNews .inner .newslist .newsitem .content {
     width: 50%;
     padding: 0px 16px 35px;
 }
 
-.StyledNews .inner .newslist .newsitem .content .text{
+.StyledNews .inner .newslist .newsitem .content .text {
     width: 100%;
 }
 
-.StyledNews .inner .newslist .newsitem .content .text p{
+.StyledNews .inner .newslist .newsitem .content .text p {
     color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
 }
 
-.StyledNews .inner .newslist .newsitem .content .action{
+.StyledNews .inner .newslist .newsitem .content .action {
     width: 100%;
     margin: 70px 0px 0px;
 }
 
-.StyledNews .inner .newslist .newsitem .content .action a{
+.StyledNews .inner .newslist .newsitem .content .action a {
     display: flex;
     width: 100%;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.StyledNews .inner .newslist .newsitem .content .action:hover{
+.StyledNews .inner .newslist .newsitem .content .action:hover {
     filter: opacity(55%)
 }
 
-.StyledNews .inner .newslist .newsitem .content .action a img{
+.StyledNews .inner .newslist .newsitem .content .action a img {
     margin: 0px 16px 0px 0px;
 }
 
-.StyledNews .inner .newslist .newsitem .content .action a span{
+.StyledNews .inner .newslist .newsitem .content .action a span {
     font-size: 16px;
     font-family: "Segoe UI Mono", mono;
     letter-spacing: 0.01rem;
@@ -1331,25 +1401,53 @@ main{
 
 
 
-@media (max-width:1680px){
-    .contanier{
-        width:1336px;
+@media (max-width:1680px) {
+    .body {
+        height: 100%;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contanier {
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        width: 1536px;
+        margin: 0px auto;
+    }
+
+    .StyledNews {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:1460px) {
+    .contanier {
+        width: 1136px;
+    }
+
+    .contanier .logo {
+        width: 190px;
+        height: 48px;
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        align-items: center;
+        flex: 0 0 auto;
     }
 }
 
-@media (max-width:1460px){
-    .contanier{
-        width:1136px;
-    }
-}
-@media (max-width:1280px){
-    .contanier{
-        width:960px;
+@media (max-width:1280px) {
+    .contanier {
+        width: 960px;
     }
 }
 
-@media (max-width:1024px){
-    .header.active{
+@media (max-width:1024px) {
+    .header.active {
         width: 100%;
         height: 48px;
         position: fixed;
@@ -1359,21 +1457,21 @@ main{
         background-color: rgb(0, 0, 0);
     }
 
-    .contanier{
-        width:100%;
+    .contanier {
+        width: 100%;
         padding: 0px 30px;
     }
 
-    .logo{
+    .logo {
         width: 60px;
     }
 
-    .navigation{
-        display:none;
+    .navigation {
+        display: none;
         padding: 0px 0px 0px 120px;
     }
 
-    .menutoggle{
+    .menutoggle {
         position: absolute;
         top: 0px;
         right: 10px;
@@ -1381,83 +1479,94 @@ main{
         width: 48px;
         z-index: 100;
     }
-    .menutoggle span{
+
+    .menutoggle span {
         position: absolute;
         width: 24px;
         height: 2px;
         background-color: rgb(255, 255, 255);
         transition: all 200ms linear 0ms;
     }
-    .menutoggle span.topbar{
+
+    .menutoggle span.topbar {
         top: 17px;
         left: 12px;
         transform: rotate(0deg);
     }
-    .menutoggle span.midbar{
+
+    .menutoggle span.midbar {
         top: 24px;
         left: 12px;
         opacity: 1;
     }
-    .menutoggle span.btmbar{
+
+    .menutoggle span.btmbar {
         top: 31px;
         left: 12px;
         transform: rotate(0deg);
     }
 
-    .mobilemenu.active{
+    .mobilemenu.active {
         opacity: 1;
         pointer-events: all;
     }
 
-    .menulistitem.active{
-        transform: translateY(20px);
-    }
-    .menulistitem2.active{
-        transform: translateY(20px);
-    }
-    .menulistitem3.active{
-        transform: translateY(20px);
-    }
-    .menulistitem4.active{
+    .menulistitem.active {
         transform: translateY(20px);
     }
 
-/* main */
-    .introduction{
-        width:100%;
+    .menulistitem2.active {
+        transform: translateY(20px);
+    }
+
+    .menulistitem3.active {
+        transform: translateY(20px);
+    }
+
+    .menulistitem4.active {
+        transform: translateY(20px);
+    }
+
+    /* main */
+    .introduction {
+        width: 100%;
         margin: 145px 0px 60px;
     }
-    .intrmain{
+
+    .intrmain {
         width: 100%;
         padding: 0px 30px;
     }
+
     .content {
-        width:60%
+        width: 60%
     }
-    .content .title h2{
+
+    .content .title h2 {
         font-size: 48px;
         line-height: 60px;
     }
-    
-    .description{
+
+    .description {
         margin: 60px 0px 30px;
-    }    
-    .media-sc{
+    }
+
+    .media-sc {
         text-align: center;
         position: relative;
         flex: 1 1 auto;
-        width:40%;
+        width: 40%;
         padding: 0px 0px 0px 30px
     }
-    .media-sc .png{
-        width:252px;
-        height:430px;
+
+    .media-sc .png {
+        width: 252px;
+        height: 430px;
         background-size: 100%;
         position: relative;
-        left:0px;       
+        left: 0px;
     }
 
 }
-@media (max-width:960px){
 
-}
+@media (max-width:960px) {}
