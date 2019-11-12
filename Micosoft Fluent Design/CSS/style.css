@@ -49,6 +49,9 @@ header {
 }
 
 .logo svg {
+    height: 16px;
+    display: block;
+    margin: 2px 0px 0px;
     width: 16px;
 }
 
@@ -1399,7 +1402,11 @@ main {
     line-height: 1;
 }
 
-
+@media (max-width:6770px) {
+    .terrafromsphere .sphere {
+        padding: 60px 30px;
+    }
+}
 
 @media (max-width:1680px) {
     .body {
@@ -1421,9 +1428,24 @@ main {
         width: 100%;
     }
 
+    .terrafromsphere .inner .rect {
+        right: 30px;
+    }
+
+    .stylecloud .inner .DeHeader {
+        font-size: 295px;
+    }
+
+    .stylecloud .inner .SignHeader {
+        top: 120px;
+        right: -30px;
+        font-size: 295px;
+    }
 }
 
 @media (max-width:1460px) {
+
+    /* header */
     .contanier {
         width: 1136px;
     }
@@ -1438,135 +1460,285 @@ main {
         align-items: center;
         flex: 0 0 auto;
     }
-}
 
-@media (max-width:1280px) {
-    .contanier {
-        width: 960px;
+    .contanier .navigation {
+        padding: 0px 60px 0px 120px;
     }
-}
 
-@media (max-width:1024px) {
-    .header.active {
+    /* header */
+
+    /* introduction */
+    .introduction .intrmain {
+        width: 1136px;
+    }
+
+    .descriptionmain {
+        max-width: 384px;
+    }
+
+
+    .intrmain .media-sc .leftLine {
+        top: 15px;
+        right: 36px;
+    }
+
+    .intrmain .media-sc .rightLine {
+        bottom: 116px;
+        left: 30px;
+    }
+
+    .intrmain .media-sc .png {
+        left: 186px;
+    }
+
+    /* introduction */
+
+    /* .platforms */
+    .platforms .inner {
+        width: 1136px;
+    }
+
+    .platforms .inner .web .webmain .icon {
+        min-height: 96px;
         width: 100%;
-        height: 48px;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        z-index: 10;
-        background-color: rgb(0, 0, 0);
-    }
-
-    .contanier {
-        width: 100%;
-        padding: 0px 30px;
-    }
-
-    .logo {
-        width: 60px;
-    }
-
-    .navigation {
-        display: none;
-        padding: 0px 0px 0px 120px;
-    }
-
-    .menutoggle {
-        position: absolute;
-        top: 0px;
-        right: 10px;
-        height: 48px;
-        width: 48px;
-        z-index: 100;
-    }
-
-    .menutoggle span {
-        position: absolute;
-        width: 24px;
-        height: 2px;
-        background-color: rgb(255, 255, 255);
-        transition: all 200ms linear 0ms;
-    }
-
-    .menutoggle span.topbar {
-        top: 17px;
-        left: 12px;
-        transform: rotate(0deg);
-    }
-
-    .menutoggle span.midbar {
-        top: 24px;
-        left: 12px;
-        opacity: 1;
-    }
-
-    .menutoggle span.btmbar {
-        top: 31px;
-        left: 12px;
-        transform: rotate(0deg);
-    }
-
-    .mobilemenu.active {
-        opacity: 1;
-        pointer-events: all;
-    }
-
-    .menulistitem.active {
-        transform: translateY(20px);
-    }
-
-    .menulistitem2.active {
-        transform: translateY(20px);
-    }
-
-    .menulistitem3.active {
-        transform: translateY(20px);
-    }
-
-    .menulistitem4.active {
-        transform: translateY(20px);
-    }
-
-    /* main */
-    .introduction {
-        width: 100%;
-        margin: 145px 0px 60px;
-    }
-
-    .intrmain {
-        width: 100%;
-        padding: 0px 30px;
-    }
-
-    .content {
-        width: 60%
-    }
-
-    .content .title h2 {
-        font-size: 48px;
-        line-height: 60px;
-    }
-
-    .description {
-        margin: 60px 0px 30px;
-    }
-
-    .media-sc {
-        text-align: center;
-        position: relative;
+        text-align: left;
         flex: 1 1 auto;
-        width: 40%;
-        padding: 0px 0px 0px 30px
+        padding: 26px;
     }
 
-    .media-sc .png {
-        width: 252px;
-        height: 430px;
-        background-size: 100%;
+    .platforms .inner .web .webmain .content {
+        height: 180px;
+    }
+
+    .platforms .inner .windows .windows_main .content {
+        height: 180px;
+    }
+
+    .platforms .inner .iOS .iOSmain .content {
+        height: 180px;
+    }
+
+    .platforms .inner .android .androidmain .content {
+        height: 180px;
+    }
+
+    /* .platforms */
+
+    /* everydevice */
+    .everydeviceinner {
+        width: 1136px;
+    }
+
+    .everydeviceinner .title {
         position: relative;
-        left: 0px;
+        bottom: 20px;
+        padding: 10px 0px 0px 16px;
     }
 
-}
+    .everydeviceinner .title .Heading {
+        font-size: 96px;
+        line-height: 120px;
+    }
 
-@media (max-width:960px) {}
+    .everydeviceinner .content {
+        position: relative;
+        bottom: 20px;
+        margin: 40px 0px 0px;
+    }
+
+    .everydeviceinner .content .contentblock {
+        width: 100%;
+        max-width: 384px;
+        padding: 0px 16px 0px 24px;
+    }
+
+    /* everydevice */
+
+    /* terrafromsphere */
+    .terrafromsphere .inner {
+        width: 1136px;
+    }
+
+    .terrafromsphere .inner .rect {
+        top: -202px;
+    }
+
+    .terrafromsphere .inner .sphere {
+        padding: 58px 100px 50px;
+    }
+
+    /* terrafromsphere */
+
+    /* terrafromdescription */
+    .terrafromdescription .inner {
+        width: 1136px;
+    }
+
+    .terrafromdescription .inner .content {
+        padding: 9px 16px;
+    }
+
+    /* terrafromdescription */
+
+    /* terrafrompowerful */
+    .terrafrompowerful .title .inner {
+        width: 1136px;
+    }
+
+    .terrafrompowerful .title .inner h2 {
+        font-size: 96px;
+        line-height: 128px;
+        margin: 0px 0px 8px 26px;
+    }
+
+    /* terrafrompowerful */
+
+    /* stylecloud */
+    .stylecloud .inner .planes {
+        display: none;
+    }
+
+    .stylecloud .inner .DeHeader {
+        top: -20px;
+        left: 150px;
+    }
+
+    .stylecloud .inner .SignHeader {
+        top: 187px;
+        right: 218px;
+    }
+
+
+
+
+
+    @media (max-width:1280px) {
+        .contanier {
+            width: 960px;
+        }
+    }
+
+    @media (max-width:1024px) {
+        .header.active {
+            width: 100%;
+            height: 48px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .contanier {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .logo {
+            width: 60px;
+        }
+
+        .navigation {
+            display: none;
+            padding: 0px 0px 0px 120px;
+        }
+
+        .menutoggle {
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            height: 48px;
+            width: 48px;
+            z-index: 100;
+        }
+
+        .menutoggle span {
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transition: all 200ms linear 0ms;
+        }
+
+        .menutoggle span.topbar {
+            top: 17px;
+            left: 12px;
+            transform: rotate(0deg);
+        }
+
+        .menutoggle span.midbar {
+            top: 24px;
+            left: 12px;
+            opacity: 1;
+        }
+
+        .menutoggle span.btmbar {
+            top: 31px;
+            left: 12px;
+            transform: rotate(0deg);
+        }
+
+        .mobilemenu.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .menulistitem.active {
+            transform: translateY(20px);
+        }
+
+        .menulistitem2.active {
+            transform: translateY(20px);
+        }
+
+        .menulistitem3.active {
+            transform: translateY(20px);
+        }
+
+        .menulistitem4.active {
+            transform: translateY(20px);
+        }
+
+        /* main */
+        .introduction {
+            width: 100%;
+            margin: 145px 0px 60px;
+        }
+
+        .intrmain {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .content {
+            width: 60%
+        }
+
+        .content .title h2 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        .description {
+            margin: 60px 0px 30px;
+        }
+
+        .media-sc {
+            text-align: center;
+            position: relative;
+            flex: 1 1 auto;
+            width: 40%;
+            padding: 0px 0px 0px 30px
+        }
+
+        .media-sc .png {
+            width: 252px;
+            height: 430px;
+            background-size: 100%;
+            position: relative;
+            left: 0px;
+        }
+
+    }
+
+    @media (max-width:960px) {}
