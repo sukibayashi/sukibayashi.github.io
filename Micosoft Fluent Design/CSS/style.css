@@ -1758,8 +1758,9 @@ main {
         width: 50%;
         padding: 0px 16px 35px;
         position: relative;
-        bottom:17px;
+        bottom: 17px;
     }
+
     /* StyledNews */
 
 
@@ -1768,6 +1769,89 @@ main {
     @media (max-width:1280px) {
         .contanier {
             width: 960px;
+        }
+
+        .introduction .intrmain {
+            width: 960px;
+        }
+
+        .intrmain .media-sc .leftLine {
+            display: none;
+        }
+
+        .intrmain .media-sc .rightLine {
+            display: none;
+        }
+
+        .intrmain .media-sc .png {
+            max-width: 100%;
+            left: 133px;
+        }
+
+        .platforms .inner {
+            width: 960px;
+        }
+
+        .everydeviceinner {
+            width: 960px;
+        }
+
+        .everydeviceinner .title {
+            padding: 24px 0px 60px;
+        }
+
+        .everydeviceinner .content {
+            margin: 0px;
+        }
+
+        .everydeviceinner .content .contentblock {
+            margin: 0px;
+            padding: 0px 5px;
+        }
+
+        .stylecloud {
+            min-height: 668px;
+        }
+
+        .stylecloud .inner {
+            width: 960px;
+        }
+
+        .stylecloud .inner .DeHeader {
+            font-size: 228px;
+            top: 40px;
+            left: 14px;
+        }
+
+        .stylecloud .inner .SignHeader {
+            font-size: 228px;
+            top: 224px;
+            right: 10px;
+        }
+
+        .stylecloud .inner .line {
+            display: none;
+        }
+
+        .StyledEngagingImmersive {
+            min-height: 668px;
+        }
+
+        .terrafromsphere .inner {
+            width: 960px;
+        }
+
+        .terrafromdescription .inner {
+            width: 960px;
+        }
+
+        .terrafrompowerful .title .inner {
+            width: 960px;
+        }
+
+        .terrafrompowerful .title .inner h2 {
+            font-size: 96px;
+            line-height: 104px;
         }
     }
 
