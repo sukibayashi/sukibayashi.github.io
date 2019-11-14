@@ -69,6 +69,7 @@
         var dt = new Date();
         var time = dt.getHours() + ":" + "0" + dt.getMinutes() ;
         // //time
+        
 
       var locationName = location.locationName;
       var Wx = location.weatherElement[0].time[0].parameter.parameterName;
@@ -77,9 +78,18 @@
       var MaxT = location.weatherElement[4].time[0].parameter.parameterName;
       console.log(locationName, Pop);
 
+
+      var weather_img = "";
+        if (Wx == "晴時多雲" || Wx == "多雲" || Wx =="陰時多雲" || Wx =="多雲時晴") {
+          weather_img ="img/icon/sun_cloud.png";
+        } else  {
+          if(Wx == "陰短暫雨");
+          weather_img ="img/icon/rain.png";
+        }
+
       $('.container').append(`<div class="weather_card">
                                         <div class="weather_landmark">
-                                          <img class="icon" src=".//img/icon/sun_cloud.png" alt="">
+                                          <img class="icon" src="${weather_img}" alt="">
                                           <img class="img" src=".//img/taipei_tower.png" alt="">
                                           <img class="white_cover" src=".//img/white_cover_tower.png" alt="">
                                         </div>

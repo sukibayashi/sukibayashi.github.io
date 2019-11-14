@@ -1853,6 +1853,56 @@ main {
             font-size: 96px;
             line-height: 104px;
         }
+
+        .StyledEngagingImmersive .inner {
+            width: 960px;
+        }
+
+        .StyledEngagingImmersive .inner .title {
+            padding: 37px 0px 0px;
+        }
+
+        .StyledEngagingImmersive .inner .title h2 {
+            font-size: 96px;
+            line-height: 104px;
+        }
+
+        .StyledEngagingImmersive .media-sc img{
+            top:8px;
+        }
+
+        .StyledSpace{
+            min-height: 668px;
+        }
+
+        .StyledSpace .inner{
+            width: 960px;
+        }
+
+        .StyledMedia .inner{
+            width: 960px;
+        }
+        
+        .StyledMedia .inner .Grid .how a .content p{
+            font-size: 28px;
+        }
+
+        .StyledMedia .inner .Grid .evo a .content p{
+            font-size: 28px;
+        }
+
+        .StyledMedia .inner .Grid .scale a .content p{
+            font-size: 28px;
+        }
+
+        .StyledMedia .inner .Grid .power a .content p{
+            font-size: 28px;
+        }
+
+        .StyledNews .inner{
+            width: 960px;
+        }
+
     }
 
     @media (max-width:1024px) {
