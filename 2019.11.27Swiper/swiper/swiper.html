@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-container {
+            padding-top: 15%;
+            width: 500px;
+            height: 500px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .image1 {
+            background-image: url('./img/1_01.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image2 {
+            background-image: url('./img/1_02.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image3 {
+            background-image: url('./img/1_03.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image4 {
+            background-image: url('./img/1_04.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image5 {
+            background-image: url('./img/1_05.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image6 {
+            background-image: url('./img/1_06.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide image1">Slide 1</div>
+                <div class="swiper-slide image2">Slide 2</div>
+                <div class="swiper-slide image3">Slide 3</div>
+                <div class="swiper-slide image4">Slide 4</div>
+                <div class="swiper-slide image5">Slide 5</div>
+                <div class="swiper-slide image6">Slide 6</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+
+</html>
