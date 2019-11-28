@@ -60,9 +60,17 @@ header {
     transition: all 200ms linear 0ms;
 }
 
+.logo:hover svg .microsoft-red {
+    fill: rgb(242, 80, 34);
+}
+
 .logo svg .microsoft-green {
     fill: rgb(255, 255, 255);
     transition: all 200ms linear 0ms;
+}
+
+.logo:hover svg .microsoft-green {
+    fill: rgb(127, 186, 0);
 }
 
 .logo svg .microsoft-blue {
@@ -70,9 +78,17 @@ header {
     transition: all 200ms linear 0ms;
 }
 
+.logo:hover svg .microsoft-blue {
+    fill: rgb(0, 164, 239);
+}
+
 .logo svg .microsoft-yellow {
     fill: rgb(255, 255, 255);
     transition: all 200ms linear 0ms;
+}
+
+.logo:hover svg .microsoft-yellow {
+    fill: rgb(255, 185, 0);
 }
 
 
@@ -223,7 +239,6 @@ main {
 
 .content {
     width: 410px;
-    flex: 0 0 auto;
 }
 
 .content .title {
@@ -282,6 +297,7 @@ main {
     position: relative;
     left: 386px;
     background-image: url('../img/icon-fluent@1x.png');
+    background-repeat: no-repeat;
 }
 
 /* top */
@@ -1046,6 +1062,14 @@ main {
     color: black;
 }
 
+.StyledMedia .inner .Grid .how:hover a .source .icon svg path {
+    fill: black;
+}
+
+.StyledMedia .inner .Grid .how:hover a .source .title label {
+    color: black;
+}
+
 .StyledMedia .inner .Grid .how a {
     display: flex;
     flex-direction: column;
@@ -1119,6 +1143,14 @@ main {
 }
 
 .StyledMedia .inner .Grid .evo:hover a .content p {
+    color: black;
+}
+
+.StyledMedia .inner .Grid .evo:hover a .source .icon svg path {
+    fill: black;
+}
+
+.StyledMedia .inner .Grid .evo:hover a .source .title label {
     color: black;
 }
 
@@ -1784,9 +1816,9 @@ main {
         }
 
         .intrmain .media-sc .png {
-            max-width: 100%;
             left: 133px;
         }
+
 
         .platforms .inner {
             width: 960px;
@@ -1807,6 +1839,10 @@ main {
         .everydeviceinner .content .contentblock {
             margin: 0px;
             padding: 0px 5px;
+        }
+
+        .everydevice {
+            min-height: 668px;
         }
 
         .stylecloud {
@@ -1903,6 +1939,22 @@ main {
             width: 960px;
         }
 
+        .webmain .action {
+            padding: 0px 30px;
+        }
+
+        .windows_main .action {
+            padding: 0px 30px;
+        }
+
+        .iOSmain .action {
+            padding: 0px 30px;
+        }
+
+        .androidmain .action {
+            padding: 0px 30px;
+        }
+
     }
 
     @media (max-width:1024px) {
@@ -1913,20 +1965,20 @@ main {
             padding: 0px 30px;
         }
 
-        .contanier .logo{
+        .contanier .logo {
             width: 60px;
         }
 
-        .sitetitle{
+        .sitetitle {
             position: relative;
-            top:1px;
+            top: 1px;
         }
 
-        .contanier .navigation{
+        .contanier .navigation {
             padding: 0px 0px 0px 120px;
         }
 
-        
+
 
         /* main */
         .introduction {
@@ -1937,28 +1989,22 @@ main {
         .intrmain {
             width: 100%;
             padding: 0px 30px;
-            margin:0px;
+            margin: 0px;
         }
 
         .content {
             width: 60%
         }
 
-        .content .title h2 {
-            font-size: 48px;
-            line-height: 60px;
-        }
 
         .description {
-            margin: 60px 0px 30px;
+            margin: 100px 0px 30px
         }
 
-        .media-sc {
-            text-align: center;
-            position: relative;
-            flex: 1 1 auto;
-            width: 40%;
-            padding: 0px 0px 0px 30px
+        .intrmain .media-sc .png {
+            width: 354px;
+            height: 603px;
+            left: 6px;
         }
 
         .media-sc .png {
@@ -1968,6 +2014,7 @@ main {
             position: relative;
             left: 0px;
         }
+
 
         .StyledMedia {
             margin: 0px 0px 60px;
@@ -2045,9 +2092,241 @@ main {
             padding: 0px 60px 35px;
             right: 25px;
         }
+
+        .intrmain {
+            width: 100%;
+            padding: 30px;
+        }
+
+        /* .platforms */
+
+        .platforms .inner {
+            width: 100%;
+            padding: 0px;
+        }
+
+        .platforms .inner .innermain {
+            flex-wrap: wrap;
+        }
+
+        /* web */
+        .innermain .web {
+            width: 50%;
+            height: 320px;
+        }
+
+        .platforms .inner .web .webmain .icon {
+            padding: 30px 30px 16px;
+        }
+
+        .innermain .web .webmain .icon img {
+            max-width: 66px;
+            max-height: 66px;
+        }
+
+        .platforms .inner .web .webmain .content {
+            height: auto;
+            padding: 0px 30px;
+        }
+
+        /* windows */
+        .innermain .windows {
+            width: 50%;
+            height: 320px;
+        }
+
+        .platforms .inner .windows .windows_main .icon {
+            padding: 30px 30px 16px;
+        }
+
+        .innermain .windows .windows_main .icon img {
+            max-width: 66px;
+            max-height: 68px;
+        }
+
+        .platforms .inner .windows .windows_main .content {
+            height: auto;
+            padding: 0px 30px;
+        }
+
+        /* iOS */
+        .innermain .iOS {
+            width: 50%;
+            height: 320px;
+        }
+
+        .platforms .inner .iOS .iOSmain .icon {
+            padding: 30px 30px 16px;
+        }
+
+        .innermain .iOS .iOSmain .icon img {
+            max-width: 66px;
+            max-height: 66px;
+        }
+
+        .platforms .inner .iOS .iOSmain .content {
+            height: auto;
+            padding: 0px 30px;
+        }
+
+        /* android */
+        .innermain .android {
+            width: 50%;
+            height: 320px;
+        }
+
+        .platforms .inner .android .androidmain .icon {
+            padding: 30px 30px 16px;
+        }
+
+        .innermain .android .androidmain .icon img {
+            max-width: 66px;
+            max-height: 66px;
+        }
+
+        .platforms .inner .android .androidmain .content {
+            height: auto;
+            padding: 0px 30px;
+        }
+
+        .everydeviceinner .title {
+            padding: 29px 0px 40px;
+        }
+
+        .everydeviceinner .title .Heading {
+            font-size: 86px;
+            line-height: 90px;
+            margin: 0px;
+        }
+
+        .everydeviceinner .content .contentblock {
+            padding: 0px 0px 0px 4px;
+        }
+
+        .StyledEngagingImmersive .inner .title h2 {
+            font-size: 86px;
+            line-height: 90px;
+            margin: 0px;
+        }
     }
 
-    @media (max-width:768px) {
+    @media (max-width:960px) {
+
+        /* .introduction */
+        .introduction .intrmain {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .content {
+            width: 60%;
+        }
+
+        .media-sc {
+            width: 40%;
+            padding: 0px 0px 0px 30px;
+        }
+
+        .intrmain .media-sc .png {
+            width: 100%;
+            left: 0px;
+        }
+
+        /* .everydevice */
+        .everydevice {
+            background-attachment: scroll;
+        }
+
+        /* .everydeviceinner */
+        .everydeviceinner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        /* .terrafromdescription .inner */
+        .terrafromdescription .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        /* .stylecloud */
+        .stylecloud {
+            background-attachment: scroll;
+        }
+
+        .stylecloud .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        /* .StyledEngagingImmersive .inner */
+        .StyledEngagingImmersive .inner {
+            width: 100%;
+            padding: 0px 30px 40px;
+        }
+
+        /* .StyledSpace */
+        .StyledSpace {
+            background-attachment: scroll;
+        }
+
+        .StyledSpace .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .StyledMedia {
+            margin: 0px;
+        }
+
+        /* StyledNews */
+        .StyledNews .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .StyledNews .inner .newslist .newsitem {
+            flex-wrap: wrap;
+            padding: 0px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .title {
+            width: 100%;
+            margin: 0px;
+            margin-top: 35px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .content {
+            width: 100%;
+            padding: 0px 0px 35px;
+            right: 0px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .title h2 {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .content .action {
+            margin: 30px 0px 0px;
+        }
+
+        .terrafromsphere .inner .rect {
+            top: -199px;
+        }
+
+        .terrafromsphere .inner .sphere {
+            padding: 61px 100px 50px;
+        }
+
+        .terrafromdescription .inner .content {
+            padding: 0px 30px;
+        }
+    }
+
+    @media (max-width:767px) {
+
+        /* navbar */
         .header.active {
             width: 100%;
             height: 48px;
@@ -2127,5 +2406,217 @@ main {
         .menulistitem4.active {
             transform: translateY(20px);
         }
+
+        /* introduction */
+
+        .introduction {
+            margin: 145px 0px -108px;
+        }
+
+        .content .title h2 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        .description {
+            margin: 60px 0px 30px;
+        }
+
+        .descriptionmain {
+            max-width: 350px;
+        }
+
+        /* .platforms .inner */
+        .innermain .web {
+            width: 100%;
+        }
+
+        .innermain .windows {
+            width: 100%;
+        }
+
+        .innermain .iOS {
+            width: 100%;
+        }
+
+        .innermain .android {
+            width: 100%;
+        }
+
+        /* .terrafromsphere .inner .rect */
+        .terrafromsphere .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .terrafromsphere .inner .rect {
+            top: -299px;
+            right: 100px;
+        }
+
+        .terrafromsphere .inner .sphere {
+            padding: 61px 53px 50px;
+        }
+
+        .terrafromdescription .inner {
+            padding: 0px 30px
+        }
+
+        .terrafromdescription .inner .content {
+            width: 384px;
+        }
+
+        /* .StyledMedia */
+
+        .StyledMedia .inner .Grid .how {
+            width: 100%;
+            height: auto;
+            min-height: 260px;
+        }
+
+        .StyledMedia .inner .Grid .evo {
+            width: 100%;
+            height: auto;
+            min-height: 260px;
+        }
+
+        .StyledMedia .inner .Grid .scale {
+            width: 100%;
+            height: auto;
+            min-height: 260px;
+        }
+
+        .StyledMedia .inner .Grid .power {
+            width: 100%;
+            height: auto;
+            min-height: 260px;
+        }
+
+        .StyledEngagingImmersive .inner .content .ContentBlock {
+            padding: 0px 0px 0px 4px;
+        }
+
+        .everydevice {
+            min-height: 768px;
+        }
+    }
+
+    @media (max-width:670px) {
+        .contanier .logo {
+            width: 30px;
+        }
+
+        /* introduction */
+
+        .introduction {
+            margin: -1px 0px 30px;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .content .title {
+            margin: 61px 0px 30px;
+        }
+
+        .content .title h2 {
+            line-height: 58px;
+        }
+
+        .description {
+            margin: 60px 0px 30px;
+        }
+
+        .media-sc {
+            display: none;
+        }
+
+        .StyledEngagingImmersive {
+            min-height: 468px;
+        }
+
+    }
+
+    @media (max-width:500px) {
+        .everydeviceinner .title .Heading {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        .everydeviceinner .title {
+            padding: 37px 0px 40px;
+        }
+
+        .terrafromsphere .inner .rect {
+            display: none;
+        }
+
+        .terrafromsphere .inner .sphere {
+            padding: 68px 30px 50px;
+        }
+
+
+
+        .terrafromsphere .inner .line {
+            display: none;
+        }
+
+        .terrafrompowerful .title .inner h2 {
+            font-size: 48px;
+            line-height: 60px;
+            margin: 0px 0px -16px 26px;
+        }
+
+        .stylecloud .inner .DeHeader {
+            font-size: 128px;
+        }
+
+        .stylecloud .inner .SignHeader {
+            font-size: 128px;
+        }
+
+        .StyledEngagingImmersive .inner .title h2 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        .StyledEngagingImmersive .inner .content {
+            margin: 33px -1px 0px;
+        }
+
+        .StyledSpace {
+            min-height: 568px;
+        }
+
+        .StyledSpace .inner .fluent {
+            width: 100%;
+            max-width: 50%;
+            left: 30%;
+            margin: 0px;
+        }
+
+        .StyledSpace .inner .fluent img {
+            max-width: 100%
+        }
+
+        .StyledSpace .inner .line {
+            display: none;
+        }
+
+        .StyledSpace .inner .WhiteRect {
+            display: none;
+        }
+
+        .StyledSpace .inner .WhitePlane {
+            display: none;
+        }
+
+        .StyledSpace .inner .LilacRect {
+            display: none;
+        }
+    }
+
+    @media (max-width:320px) {
 
     }
