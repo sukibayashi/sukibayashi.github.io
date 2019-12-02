@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    .star{
+        width:354px;
+        height:374px;
+        background-image: url('http://st2.ilvs.ilc.edu.tw/~s414105/images/%E6%B4%BE%E5%A4%A7%E6%98%9F.png');
+        position: relative;
+        left:0px;
+
+        animation-name:starmove;
+        animation-duration: 5s;
+        animation-timing-function: cubic-bezier(.83,0,.1,1);
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes starmove {
+        0%{
+
+        }
+
+        34%{
+            left:100vh;
+            transform: rotate(25deg);
+        }
+
+
+        67%{
+            left:20vh;
+            margin-top:25%;
+            transform: rotate(-45deg);
+            transform:scaleY(1);
+        }
+
+
+
+        100%{
+            left:150vh;
+            top:0px;
+            transform: rotate(55deg);
+            
+            -webkit-transform:skewX(-20deg);
+            transform:scaleX(-1);
+
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="star"></div>
+</body>
+</html>
