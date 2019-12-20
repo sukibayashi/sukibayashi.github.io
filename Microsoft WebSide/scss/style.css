@@ -566,13 +566,13 @@ footer {
 }
 
 footer .footer_container {
-  padding: 0 6% 0 6%;
+  padding: 0 1% 0 1%;
   margin: 0 auto;
 }
 
 @media (max-width: 1083px) {
   footer .footer_container {
-    padding: 0;
+    padding: 0 2% 0 2%;
   }
 }
 
@@ -588,7 +588,7 @@ footer .footer_container .footer_bottom {
 
 @media (max-width: 1083px) {
   footer .footer_container .footer_bottom {
-    padding: 30px 24px 16px 24px;
+    padding: 30px 15px 16px 24px;
   }
 }
 

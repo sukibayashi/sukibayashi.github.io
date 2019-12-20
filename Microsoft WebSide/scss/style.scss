@@ -557,11 +557,11 @@ footer {
     background-color: #e7e7e7;
 
     .footer_container {
-        padding: 0 6% 0 6%;
+        padding: 0 1% 0 1%;
         margin: 0 auto;
 
         @media (max-width:1083px) {
-            padding: 0;
+            padding: 0 2% 0 2%;
         }
 
         .footer_bottom {
@@ -570,7 +570,7 @@ footer {
             justify-content: space-between;
 
             @media (max-width:1083px) {
-                padding: 30px 24px 16px 24px;
+                padding: 30px 15px 16px 24px;
             }
 
             @media (max-width:767px) {
