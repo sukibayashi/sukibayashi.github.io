@@ -74,7 +74,14 @@
 
     .swiper-container {
 
+        @media (max-width:767px) {
+            position: relative;
+            padding-bottom: 320px;
+            background-color: #e7e7e7;
+        }
+
         .swiper-wrapper {
+
 
             .swiper-slide {
 
@@ -97,7 +104,7 @@
                         display: block
                     }
 
-                    @media (max-width:768px) {
+                    @media (max-width:767px) {
                         display: none;
                     }
                 }
@@ -105,7 +112,7 @@
                 .swiper-slider-banner-sm {
                     display: none;
 
-                    @media (max-width:768px) {
+                    @media (max-width:767px) {
                         display: block;
                     }
                 }
@@ -127,12 +134,29 @@
                         top: calc(40%);
                         transform: translateY(-50%);
 
+                        @media (max-width:767px) {
+                            position: relative;
+                            text-align: center;
+                            top: calc(100% - -130px);
+                            max-width: 100%;
+                        }
+
                         h2 {
                             font-size: 24px;
                             line-height: 28px;
                             padding: 36px 0 4px;
                             max-height: 56px;
-                            font-weight: 600;
+                            font-weight: 700;
+                            font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+                            @media (max-width:767px) {
+                                font-size: 20px;
+                                line-height: 24px;
+                                overflow: hidden;
+                                box-sizing: content-box;
+                                max-height: 120px;
+                                opacity: .95;
+                            }
                         }
 
                         p {
@@ -191,9 +215,8 @@
 
                 .col-xl-6 {
 
+
                     img {
-
-
                         width: 100%;
                     }
 
@@ -246,7 +269,6 @@
                 }
 
             }
-
         }
     }
 }
@@ -258,12 +280,18 @@
     padding: 0 6% 0 6%;
     position: relative;
 
+    @media (max-width:1200px) {
+        margin-top: 20px;
+    }
+
     @media (max-width:1083px) {
         padding: 0;
     }
 
-    @media (max-width:1200px) {
-        margin-top: 20px;
+    @media (max-width:767px) {
+        position: relative;
+        padding-bottom: 320px;
+        background-color: #e7e7e7;
     }
 
     .xboxOne {
@@ -285,9 +313,21 @@
             display: none;
 
             @media (max-width:1083px) {
-                display: block
+                display: block;
             }
 
+            @media (max-width:767px) {
+                display: none;
+            }
+
+        }
+
+        .Xbox-767 {
+            display: none;
+
+            @media (max-width:767px) {
+                display: block;
+            }
         }
 
         .context_banner {
@@ -328,11 +368,29 @@
                         z-index: 1;
                         max-width: 520px;
 
+                        @media (max-width:767px) {
+                            position: relative;
+                            text-align: center;
+                            top: calc(100% - 175px);
+                            max-width: 100%;
+                        }
+
                         h2 {
                             font-size: 46px;
                             line-height: 56px;
                             letter-spacing: -.01em;
                             box-sizing: content-box;
+
+                            @media (max-width:767px) {
+                                font-size: 20px;
+                                line-height: 24px;
+                                padding: 35px 0 5px;
+                                overflow: hidden;
+                                box-sizing: content-box;
+                                max-height: 120px;
+                                font-weight: 600;
+                                opacity: .95;
+                            }
                         }
 
                         p {
@@ -363,18 +421,30 @@
                             vertical-align: top;
                         }
                     }
+
                 }
             }
-
         }
-
-
     }
 }
+
 
 .end {
     margin-top: 45px;
     padding: 0 5% 0 5%;
+
+    .title {
+        padding-left: 10px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+            padding: 36px 0 4px;
+            font-weight: 700;
+            padding-top: 0;
+            font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+    }
 
     .row {
 
@@ -450,6 +520,33 @@
 
             }
 
+        }
+    }
+}
+
+.primary {
+
+    .inner {
+        padding: 30px 6% 0 6%;
+        display: flex;
+
+        span {
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, .6);
+            padding-right: 12px;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+
+            padding-inline-start: 10px;
+
+            li {
+                margin-right: 20px;
+            }
         }
     }
 }

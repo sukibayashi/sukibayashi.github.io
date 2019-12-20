@@ -66,6 +66,14 @@
   }
 }
 
+@media (max-width: 767px) {
+  .banner_container .swiper-container {
+    position: relative;
+    padding-bottom: 320px;
+    background-color: #e7e7e7;
+  }
+}
+
 .banner_container .swiper-container .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
@@ -90,7 +98,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .banner_container .swiper-container .swiper-wrapper .swiper-slide .swiper-slider-banner-1083 {
     display: none;
   }
@@ -100,7 +108,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .banner_container .swiper-container .swiper-wrapper .swiper-slide .swiper-slider-banner-sm {
     display: block;
   }
@@ -126,12 +134,34 @@
           transform: translateY(-50%);
 }
 
+@media (max-width: 767px) {
+  .banner_container .swiper-container .swiper-wrapper .swiper-slide .context_banner .context {
+    position: relative;
+    text-align: center;
+    top: calc(100% - -130px);
+    max-width: 100%;
+  }
+}
+
 .banner_container .swiper-container .swiper-wrapper .swiper-slide .context_banner .context h2 {
   font-size: 24px;
   line-height: 28px;
   padding: 36px 0 4px;
   max-height: 56px;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 767px) {
+  .banner_container .swiper-container .swiper-wrapper .swiper-slide .context_banner .context h2 {
+    font-size: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    max-height: 120px;
+    opacity: .95;
+  }
 }
 
 .banner_container .swiper-container .swiper-wrapper .swiper-slide .context_banner .context p {
@@ -246,15 +276,23 @@
   position: relative;
 }
 
+@media (max-width: 1200px) {
+  .medium {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 1083px) {
   .medium {
     padding: 0;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   .medium {
-    margin-top: 20px;
+    position: relative;
+    padding-bottom: 320px;
+    background-color: #e7e7e7;
   }
 }
 
@@ -282,6 +320,22 @@
 
 @media (max-width: 1083px) {
   .medium .xboxOne .Xbox-1083 {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .medium .xboxOne .Xbox-1083 {
+    display: none;
+  }
+}
+
+.medium .xboxOne .Xbox-767 {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .medium .xboxOne .Xbox-767 {
     display: block;
   }
 }
@@ -328,12 +382,35 @@
   max-width: 520px;
 }
 
+@media (max-width: 767px) {
+  .medium .xboxOne .context_banner .context .inner .text {
+    position: relative;
+    text-align: center;
+    top: calc(100% - 175px);
+    max-width: 100%;
+  }
+}
+
 .medium .xboxOne .context_banner .context .inner .text h2 {
   font-size: 46px;
   line-height: 56px;
   letter-spacing: -.01em;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+
+@media (max-width: 767px) {
+  .medium .xboxOne .context_banner .context .inner .text h2 {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 35px 0 5px;
+    overflow: hidden;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    max-height: 120px;
+    font-weight: 600;
+    opacity: .95;
+  }
 }
 
 .medium .xboxOne .context_banner .context .inner .text p {
@@ -367,6 +444,19 @@
 .end {
   margin-top: 45px;
   padding: 0 5% 0 5%;
+}
+
+.end .title {
+  padding-left: 10px;
+}
+
+.end .title h2 {
+  font-size: 24px;
+  line-height: 28px;
+  padding: 36px 0 4px;
+  font-weight: 700;
+  padding-top: 0;
+  font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .end .row {
@@ -440,5 +530,33 @@
   right: 0;
   content: ">";
   vertical-align: top;
+}
+
+.primary .inner {
+  padding: 30px 6% 0 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.primary .inner span {
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  padding-right: 12px;
+  margin-bottom: 4px;
+}
+
+.primary .inner ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+
+.primary .inner ul li {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
