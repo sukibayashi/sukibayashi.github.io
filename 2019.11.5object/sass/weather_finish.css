@@ -158,7 +158,7 @@
 .container .weather_card .weather_temperature ul li {
   width: 100%;
   padding: 4px;
-  margin: 10px;
+  margin: 22px 95px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

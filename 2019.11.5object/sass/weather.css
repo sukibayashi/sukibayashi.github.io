@@ -155,14 +155,14 @@
 .container .weather_card .weather_temperature ul li {
   width: 100%;
   padding: 4px;
-  margin: 10px;
+  margin: 22px 95px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   color: #d95720;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
 }
 
 .container .weather_card .weather_temperature ul .outer_temp {
