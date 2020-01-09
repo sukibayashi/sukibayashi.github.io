@@ -1,0 +1,29 @@
+[INFO  - 2020-01-08T06:56:29.834Z] GhostDriver - Main - running on port 62345
+[INFO  - 2020-01-08T06:56:30.386Z] Session [ff99ace0-31e3-11ea-a63c-9bf80409edc3] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-01-08T06:56:30.386Z] Session [ff99ace0-31e3-11ea-a63c-9bf80409edc3] - page.customHeaders:  - {}
+[INFO  - 2020-01-08T06:56:30.386Z] Session [ff99ace0-31e3-11ea-a63c-9bf80409edc3] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-01-08T06:56:30.386Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: ff99ace0-31e3-11ea-a63c-9bf80409edc3
+[ERROR - 2020-01-08T06:56:34.669Z] Session [ff99ace0-31e3-11ea-a63c-9bf80409edc3] - page.onError - msg: Error: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7B%24%24typeof%2C%20type%2C%20key%2C%20ref%2C%20props%2C%20_owner%7D&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings. 
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-01-08T06:56:34.669Z] Session [ff99ace0-31e3-11ea-a63c-9bf80409edc3] - page.onError - stack:
+  Go (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  (anonymous function) (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  Qu (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  Bu (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  Uu (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  Ru (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  ul (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  ll (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  (anonymous function) (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  Du (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  vl (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  hydrate (https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js:22)
+  t (https://static.zhihu.com/heifetz/main.app.84f3661721b6f3843de2.js:74)
+  renderCallback (https://static.zhihu.com/heifetz/main.app.84f3661721b6f3843de2.js:74)
+  (anonymous function) (https://static.zhihu.com/heifetz/main.app.84f3661721b6f3843de2.js:74)
+  (anonymous function) (https://static.zhihu.com/heifetz/main.app.84f3661721b6f3843de2.js:63)
+  h (https://static.zhihu.com/heifetz/main.app.84f3661721b6f3843de2.js:63)
+  s (https://static.zhihu.com/heifetz/main.app.84f3661721b6f3843de2.js:63)
+
+  phantomjs://platform/console++.js:263 in error
