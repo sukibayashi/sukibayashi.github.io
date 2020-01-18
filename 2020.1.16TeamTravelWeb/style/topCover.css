@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.zoom {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .zoom:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    background: linear-gradient(transparent, #fff);
+} */
+
+.zoom #layer1 {
+    position: absolute;
+    /* top: 200px; */
+    left:-185px;
+    width: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.zoom #layer2 {
+    position: absolute;
+    top:50px;
+    right: -600px;
+    width: 50%;
+    z-index: 9;
+}
+
+.zoom #text {
+    position: absolute;
+    left:calc(50% - 462px);
+    transform: translateY(114%);
+    z-index: 8;
+
+    color:white;
+    font-size: 400px;
+    text-align: center;
+}
+
+.content {
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.content p {
+    font-size: 1.2em;
+}
