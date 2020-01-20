@@ -751,12 +751,12 @@ html {
 .topCover::before{
   content: "";
   position: absolute;
-  bottom: -200px;
+  bottom: -10px;
   left:0;
   width: 100%;
-  height: 200px;
-  z-index: 1000;
-  background: linear-gradient(transparent, #fff);
+  height: 100px;
+  z-index: 5;
+  background: linear-gradient(transparent, #ccc);
 }
 
 
