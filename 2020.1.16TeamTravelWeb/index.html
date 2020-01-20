@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="./style/topCover.css">
     <!-- topCities -->
     <link rel="stylesheet" href="./style/popularCities.css">
+    <!-- tickets -->
+    <link rel="stylesheet" href="./style/tickets.css">
 
     <style>
         ul.tabs {
@@ -420,59 +422,131 @@
         </div>
     </section>
 
-    <div class="popularCities">
+    <section class="popularCities">
         <h2 class="popularTitle">探索熱門城市</h2>
         <p class="popularText">發現當地最酷炫的道地玩法</p>
-    </div>
+    </section>
 
-    <section class="cards container">
-        <article class="card card--1">
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-                <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-                <span class="card__category"> Recipe</span>
-                <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-            </div>
-        </article>
+    <section class="popularCities_Cards">
+        <div class="cards container">
+            <article class="card card--1">
+                <div class="card__img"></div>
+                <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category">Taipei</span>
+                    <h3 class="card__title">台北</h3>
+                </div>
+            </article>
 
-        <article class="card card--2">
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-                <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-                <span class="card__category"> Recipe</span>
-                <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-            </div>
-        </article>
+            <article class="card card--2">
+                <div class="card__img"></div>
+                <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category">taichung</span>
+                    <h3 class="card__title">台中</h3>
+                </div>
+            </article>
 
-        <article class="card card--1">
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-                <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-                <span class="card__category"> Recipe</span>
-                <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-            </div>
-        </article>
+            <article class="card card--3">
+                <div class="card__img"></div>
+                <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category">tokyo</span>
+                    <h3 class="card__title">東京</h3>
+                </div>
+            </article>
 
-        <article class="card card--1">
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-                <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-                <span class="card__category"> Recipe</span>
-                <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+            <article class="card card--4">
+                <div class="card__img"></div>
+                <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category">korea</span>
+                    <h3 class="card__title">韓國</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="tickets">
+        <div class="example-1 ticketCard">
+            <div class="wrapper">
+                <div class="header">
+                    <div class="date">
+                        <span class="day">25</span>
+                        <span class="month">JAN</span>
+                        <span class="year">2020</span>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="content">
+                        <span class="author">台北</span>
+                        <h1 class="title"><a href="#">【穿旗袍遊九份】九份老街CHIPAO旗袍體驗</a></h1>
+                        <p class="text">在九份老街體驗穿旗袍，沿著九份老街一路拍照，從人氣景點阿妹茶樓、可以看見山城風景的小巷、到遠眺海景的觀景區，穿著復古旗袍穿梭懷舊街道，充分感受九份古色古香的文化之美。</p>
+                        <a href="#" class="buttonFlex">
+                            <button class="button">
+                                <span>詳情介紹</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </article>
+        </div>
+
+        <div class="example-2 ticketCard">
+            <div class="wrapper">
+                <div class="header">
+                    <div class="date">
+                        <span class="day">26</span>
+                        <span class="month">JAN</span>
+                        <span class="year">2020</span>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="content">
+                        <span class="author">台中</span>
+                        <h1 class="title"><a href="#">高美濕地夕陽專車往返台中市區</a></h1>
+                        <p class="text">直達專車，不必煩惱高美濕地交通，輕鬆前往台中日落景點欣賞高美濕地夕陽！去程可自由選擇宮原眼科或台中高鐵站上車，下車地點可選擇逢甲夜市或高鐵站。</p>
+                        <a href="#" class="buttonFlex">
+                            <button class="button">
+                                <span>hover me</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-3 ticketCard">
+            <div class="wrapper">
+                <div class="header">
+                    <div class="date">
+                        <span class="day">26</span>
+                        <span class="month">JAN</span>
+                        <span class="year">2020</span>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="content">
+                        <span class="author">台中</span>
+                        <h1 class="title"><a href="#">高美濕地夕陽專車往返台中市區</a></h1>
+                        <p class="text">直達專車，不必煩惱高美濕地交通，輕鬆前往台中日落景點欣賞高美濕地夕陽！去程可自由選擇宮原眼科或台中高鐵站上車，下車地點可選擇逢甲夜市或高鐵站。</p>
+                        <a href="#" class="buttonFlex">
+                            <button class="button">
+                                <span>hover me</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>

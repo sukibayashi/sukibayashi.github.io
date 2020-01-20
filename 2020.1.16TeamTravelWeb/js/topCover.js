@@ -21,7 +21,7 @@ scroll = window.pageYOffset;
 document.addEventListener('scroll', function (e) {
     var offset = window.pageYOffset;
     scroll = offset;
-    text.style.top = -scroll / 10 + '%';
+    text.style.top = -scroll / 15 + '%';
 })
 
 var title = document.getElementById('title')
@@ -29,5 +29,5 @@ scroll = window.pageYOffset;
 document.addEventListener('scroll', function (e) {
     var offset = window.pageYOffset;
     scroll = offset;
-    title.style.top = -scroll / 10 + '%';
+    title.style.top = -scroll / 15 + '%';
 })
