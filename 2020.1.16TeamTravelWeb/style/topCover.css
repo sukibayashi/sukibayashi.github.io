@@ -39,12 +39,23 @@ body {
 
 .zoom #text {
     position: absolute;
-    left:calc(50% - 462px);
-    transform: translateY(114%);
+    left:calc(50% - 271px);
+    transform: translateY(2280%);
     z-index: 8;
 
     color:white;
-    font-size: 400px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.zoom #title {
+    position: absolute;
+    left: calc(50% - 235px);
+    transform: translateY(1020%);
+
+    z-index: 8;
+    color: white;
+    font-size: 60px;
     text-align: center;
 }
 

@@ -745,6 +745,8 @@ html {
 .mbr-box {
   display: table;
   width: 100%;
+  height: 1064px;
+
 }
 .topCover::before{
   content: "";

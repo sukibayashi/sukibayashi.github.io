@@ -23,3 +23,11 @@ document.addEventListener('scroll', function (e) {
     scroll = offset;
     text.style.top = -scroll / 10 + '%';
 })
+
+var title = document.getElementById('title')
+scroll = window.pageYOffset;
+document.addEventListener('scroll', function (e) {
+    var offset = window.pageYOffset;
+    scroll = offset;
+    title.style.top = -scroll / 10 + '%';
+})
