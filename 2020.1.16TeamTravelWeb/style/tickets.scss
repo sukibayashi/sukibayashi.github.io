@@ -32,7 +32,6 @@ h1 {
 }
 
 .tickets {
-    max-width: 900px;
     display: flex;
     margin: 100px auto 100px;
 }
@@ -384,7 +383,7 @@ h1 {
 // 3 example styles
 .example-3 {
     .wrapper {
-        background: url('../img/gaomei.jpg') center / cover no-repeat;
+        background: url('../img/Disney.jpg') center / cover no-repeat;
 
         &:hover {
 
