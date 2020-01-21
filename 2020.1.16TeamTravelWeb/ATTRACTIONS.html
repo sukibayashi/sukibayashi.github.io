@@ -23,6 +23,11 @@
     <!-- attractions -->
     <link rel="stylesheet" href="./style/attractions.css">
 
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 
     <style>
         .section-base {
@@ -444,6 +449,7 @@
     </footer> -->
 
     <section class="topSpace">
+        <div class="attractionsTitle" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500">景點介紹</div>
         <div id="earth" class="earth"></div>
         <div class="star">
             <div id="star1" class="star1"></div>
@@ -452,14 +458,59 @@
             <div id="star4" class="star4"></div>
         </div>
         <div class="cloud">
-            <div class="cloud1"></div>
-            <div class="cloud2"></div>
-            <div class="cloud3"></div>
-            <div class="cloud4"></div>
-            <div class="cloud5"></div>
+            <div id="cloud1" class="cloud1"></div>
+            <div id="cloud2" class="cloud2"></div>
+            <div id="cloud3" class="cloud3"></div>
+            <div id="cloud4" class="cloud4"></div>
+            <div id="cloud5" class="cloud5"></div>
         </div>
+    </section>
 
+    <section class="island">
+        <div class="ocean">
+            <div id="taiwan" class="taiwan"></div>
+            <div class="igTaipei">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="taipei1" src="./img/igTaipei1.jpg" alt="" style="width:283px; height:283px">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p>從世界最高樓(2004-2010)到國際級的中華藝術典藏，我們誠摯的邀請您來到這個充滿著對比的城市。現代與傳統相互包容外，再結合了無比活力與親切笑容，臺北定會成為您在亞洲最美好的回憶。
+                                </p>
+                            </div>
+                        </div>
 
+                        <div class="swiper-slide">
+                            <img class="taipei1" src="./img/igTaipei2.jpg" alt="" style="width:283px; height:283px">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p>在臺北，您每個所到之處，多樣的文化特質都充沛鼓動著。雕龍畫棟的廟宇與現代的街道完美吻合，還有許多世界級餐廳隨時提供您最正統的各式中華料理。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="taipei1" src="./img/igTaipei1.jpg" alt="" style="width:283px; height:283px">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p>從世界最高樓(2004-2010)到國際級的中華藝術典藏，我們誠摯的邀請您來到這個充滿著對比的城市。現代與傳統相互包容外，再結合了無比活力與親切笑容，臺北定會成為您在亞洲最美好的回憶。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- <div class="igTaipei_photo"></div>
+                <div class="igTaipei_content">
+                    <p>從世界最高樓(2004-2010)到國際級的中華藝術典藏，我們誠摯的邀請您來到這個充滿著對比的城市。現代與傳統相互包容外，再結合了無比活力與親切笑容，臺北定會成為您在亞洲最美好的回憶。<br>
+                        在臺北，您每個所到之處，多樣的文化特質都充沛鼓動著。雕龍畫棟的廟宇與現代的街道完美吻合，還有許多世界級餐廳隨時提供您最正統的各式中華料理。別忘了，美味的夜市小吃不僅僅帶給您口腹的滿足，更是引領您體驗臺灣生活的理想去處。<br>
+                        臺北的相對性也在都市與自然接壤之間顯現。幾分鐘的車程，您就能在山林環繞下，浸醞於柔潤的溫泉中。還有許多親山步道與公園在城市間穿梭點綴，一日庸碌繁忙後，陪伴著您沉靜心靈。<br>
+                        無論您是短暫停留或是計畫長期拜訪，臺北所蘊藏的多樣性絕對會讓您回味無窮。<br>
+                        來臺北，感受亞洲之美。</p>
+                </div> -->
+            </div>
+        </div>
     </section>
 
 
@@ -471,6 +522,24 @@
 
     <!-- spaceJS -->
     <script src="./js/attractions.js"></script>
+
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js   "></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 </body>
 

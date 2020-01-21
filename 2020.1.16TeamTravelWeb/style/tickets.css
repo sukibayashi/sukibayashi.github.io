@@ -35,7 +35,7 @@ h1 {
 .ticketCard {
   float: left;
   padding: 0 1.7rem;
-  width: 441px;
+  width: 370px;
 }
 
 .ticketCard .menu-content {
@@ -564,7 +564,7 @@ h1 {
 
 .example-4 .wrapper {
   background: url("../img/bear.jpg") center/cover no-repeat;
-  background-position: -285px 0px;
+  background-position: -355px 0px;
 }
 
 .example-4 .wrapper:hover .menu-content span {

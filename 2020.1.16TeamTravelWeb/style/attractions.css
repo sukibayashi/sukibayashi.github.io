@@ -1,14 +1,25 @@
 .topSpace {
   background-color: #0b263b;
   width: 100%;
-  height: 2000px;
+  height: 1750px;
   position: -webkit-sticky;
   position: sticky;
   overflow-x: hidden;
 }
 
+.topSpace .attractionsTitle {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 400px;
+  z-index: 5;
+  text-shadow: black 0px 1px 4px;
+}
+
 .topSpace .earth {
   position: absolute;
+  top: 100px;
   left: calc(50% - 510px);
   background-image: url("../img/EarthWhite.png");
   background-size: cover;
@@ -75,9 +86,126 @@
   background-size: cover;
   width: 950px;
   height: 600px;
-  position: absolute;
-  left: 900px;
+  left: 1200px;
   top: 700px;
   z-index: 3;
+}
+
+.topSpace .cloud .cloud2 {
+  position: absolute;
+  background-image: url("../img/cloud2.png");
+  background-size: cover;
+  width: 950px;
+  height: 600px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  left: -400px;
+  top: 700px;
+  z-index: 3;
+}
+
+.topSpace .cloud .cloud3 {
+  position: absolute;
+  background-image: url("../img/cloud3.png");
+  background-size: cover;
+  width: 1000px;
+  height: 600px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  left: 1000px;
+  top: 780px;
+  z-index: 3;
+}
+
+.topSpace .cloud .cloud4 {
+  position: absolute;
+  background-image: url("../img/cloud3.png");
+  background-size: cover;
+  width: 1400px;
+  height: 832px;
+  right: 1200px;
+  top: 700px;
+  z-index: 3;
+}
+
+.topSpace .cloud .cloud5 {
+  position: absolute;
+  background-image: url("../img/cloud2.png");
+  background-size: cover;
+  width: 1500px;
+  height: 700px;
+  left: 1400px;
+  top: 1000px;
+  z-index: 4;
+}
+
+.island {
+  width: 100%;
+  height: 1200px;
+  position: relative;
+}
+
+.island .ocean {
+  background-image: url("../img/ocean.jpg");
+  z-index: 2;
+  background-size: cover;
+  width: 100%;
+  height: 1400px;
+}
+
+.island .ocean .taiwan {
+  background-image: url("../img/taiwanMap.png");
+  background-size: cover;
+  z-index: 3;
+  width: 700px;
+  height: 1200px;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.4));
+  position: absolute;
+  top: 200px;
+  left: calc(50% - 450px);
+}
+
+.island .ocean .igTaipei {
+  background-image: url("../img/instagramTaipei.png");
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 65px;
+  right: 82px;
+}
+
+.island .ocean .igTaipei .swiper-container {
+  width: 300px;
+  position: absolute;
+  top: 130px;
+  left: 154px;
+  word-wrap: break-word;
+}
+
+.island .ocean .igTaipei .swiper-container .text {
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.island .ocean .igTaipei .swiper-container .text p {
+  font-size: 1.2rem;
+}
+
+.island .ocean .igTaipei .swiper-container .swiper-pagination {
+  left: 48%;
+  bottom: 111px;
+}
+
+.island::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 200px;
+  z-index: 5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b263b), to(transparent));
+  background: linear-gradient(#0b263b, transparent);
 }
 /*# sourceMappingURL=attractions.css.map */
