@@ -198,6 +198,72 @@
   bottom: 111px;
 }
 
+.island .ocean .igTaichung {
+  background-image: url("../img/instagramTaichung.png");
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 468px;
+  left: 43px;
+  z-index: 9;
+}
+
+.island .ocean .igTaichung .swiper-container {
+  width: 300px;
+  position: absolute;
+  top: 130px;
+  left: 154px;
+  word-wrap: break-word;
+}
+
+.island .ocean .igTaichung .swiper-container .text {
+  margin-top: 48px;
+  margin-right: 10px;
+}
+
+.island .ocean .igTaichung .swiper-container .text p {
+  font-size: 1.2rem;
+}
+
+.island .ocean .igTaichung .swiper-container .swiper-pagination {
+  left: 48%;
+  bottom: 125px;
+}
+
+.island .ocean .igTainan {
+  background-image: url("../img/instagramTainan.png");
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 838px;
+  right: 185px;
+  z-index: 9;
+}
+
+.island .ocean .igTainan .swiper-container {
+  width: 300px;
+  position: absolute;
+  top: 130px;
+  left: 154px;
+  word-wrap: break-word;
+}
+
+.island .ocean .igTainan .swiper-container .text {
+  margin-top: 48px;
+  margin-right: 10px;
+}
+
+.island .ocean .igTainan .swiper-container .text p {
+  font-size: 1.2rem;
+}
+
+.island .ocean .igTainan .swiper-container .swiper-pagination {
+  left: 48%;
+  bottom: 125px;
+}
+
 .island::after {
   content: "";
   position: absolute;

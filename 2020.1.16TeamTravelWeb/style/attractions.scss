@@ -202,6 +202,76 @@
         }
       }
     }
+
+    .igTaichung {
+      background-image: url("../img/instagramTaichung.png");
+      background-size: cover;
+      width: 600px;
+      height: 600px;
+
+      position: absolute;
+      top: 468px;
+      left: 43px;
+      z-index: 9;
+
+      .swiper-container {
+        width: 300px;
+
+        position: absolute;
+        top: 130px;
+        left: 154px;
+        word-wrap: break-word;
+
+        .text {
+          margin-top: 48px;
+          margin-right: 10px;
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+
+        .swiper-pagination {
+          left: 48%;
+          bottom: 125px;
+        }
+      }
+    }
+
+    .igTainan {
+      background-image: url("../img/instagramTainan.png");
+      background-size: cover;
+      width: 600px;
+      height: 600px;
+
+      position: absolute;
+      top: 838px;
+      right: 185px;
+      z-index: 9;
+
+      .swiper-container {
+        width: 300px;
+
+        position: absolute;
+        top: 130px;
+        left: 154px;
+        word-wrap: break-word;
+
+        .text {
+          margin-top: 48px;
+          margin-right: 10px;
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+
+        .swiper-pagination {
+          left: 48%;
+          bottom: 125px;
+        }
+      }
+    }
   }
 }
 
