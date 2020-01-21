@@ -15,10 +15,27 @@ h1 {
   margin: 40px auto 100px;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  background-size: 15px 44px;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #666;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
 .ticketCard {
   float: left;
   padding: 0 1.7rem;
-  width: 50%;
+  width: 441px;
 }
 
 .ticketCard .menu-content {
@@ -124,29 +141,31 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #2d4e68;
+  background-color: #42c505;
   color: #fff;
   padding: 0.8em;
 }
 
 .example-1 .wrapper .date span {
-  display: block;
   text-align: center;
 }
 
 .example-1 .wrapper .date .day {
-  font-weight: 700;
-  font-size: 24px;
+  float: left;
+  font-size: 14px;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
 }
 
 .example-1 .wrapper .date .month {
+  margin-left: 7px;
   text-transform: uppercase;
 }
 
 .example-1 .wrapper .date .month,
 .example-1 .wrapper .date .year {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
 }
 
 .example-1 .header {
@@ -267,29 +286,31 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #2d4e68;
+  background-color: #42c505;
   color: #fff;
   padding: 0.8em;
 }
 
 .example-2 .wrapper .date span {
-  display: block;
   text-align: center;
 }
 
 .example-2 .wrapper .date .day {
-  font-weight: 700;
-  font-size: 24px;
+  float: left;
+  font-size: 14px;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
 }
 
 .example-2 .wrapper .date .month {
+  margin-left: 7px;
   text-transform: uppercase;
 }
 
 .example-2 .wrapper .date .month,
 .example-2 .wrapper .date .year {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
 }
 
 .example-2 .header {
@@ -410,29 +431,31 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #2d4e68;
+  background-color: #42c505;
   color: #fff;
   padding: 0.8em;
 }
 
 .example-3 .wrapper .date span {
-  display: block;
   text-align: center;
 }
 
 .example-3 .wrapper .date .day {
-  font-weight: 700;
-  font-size: 24px;
+  float: left;
+  font-size: 14px;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
 }
 
 .example-3 .wrapper .date .month {
+  margin-left: 7px;
   text-transform: uppercase;
 }
 
 .example-3 .wrapper .date .month,
 .example-3 .wrapper .date .year {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
 }
 
 .example-3 .header {
@@ -534,6 +557,152 @@ h1 {
 }
 
 .example-3 .buttonFlex .button:hover::after {
+  -webkit-transform: translate(5px, -50%);
+          transform: translate(5px, -50%);
+  opacity: 1;
+}
+
+.example-4 .wrapper {
+  background: url("../img/bear.jpg") center/cover no-repeat;
+  background-position: -285px 0px;
+}
+
+.example-4 .wrapper:hover .menu-content span {
+  -webkit-transform: translate(-50%, -10px);
+          transform: translate(-50%, -10px);
+  opacity: 1;
+}
+
+.example-4 .wrapper .date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #42c505;
+  color: #fff;
+  padding: 0.8em;
+}
+
+.example-4 .wrapper .date span {
+  text-align: center;
+}
+
+.example-4 .wrapper .date .day {
+  float: left;
+  font-size: 14px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+}
+
+.example-4 .wrapper .date .month {
+  margin-left: 7px;
+  text-transform: uppercase;
+}
+
+.example-4 .wrapper .date .month,
+.example-4 .wrapper .date .year {
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+}
+
+.example-4 .header {
+  color: #fff;
+  padding: 1em;
+}
+
+.example-4 .header::before, .example-4 .header::after {
+  content: '';
+  display: table;
+}
+
+.example-4 .header::after {
+  clear: both;
+}
+
+.example-4 .header .date {
+  float: left;
+  font-size: 12px;
+}
+
+.example-4 .menu-content {
+  float: right;
+}
+
+.example-4 .menu-content li {
+  margin: 0 5px;
+  position: relative;
+}
+
+.example-4 .menu-content span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.example-4 .data {
+  color: #fff;
+  -webkit-transform: translateY(calc(70px + 4em));
+          transform: translateY(calc(70px + 4em));
+}
+
+.example-4 .title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.example-4 .buttonFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  margin-top: 35px;
+}
+
+.example-4 .buttonFlex .button {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 40px;
+  width: 160px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+}
+
+.example-4 .buttonFlex .button span {
+  color: #164ca7;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.example-4 .buttonFlex .button:hover {
+  -webkit-animation: rotate 0.7s ease-in-out both;
+          animation: rotate 0.7s ease-in-out both;
+}
+
+.example-4 .buttonFlex .button span {
+  -webkit-animation: storm 0.7s ease-in-out both;
+          animation: storm 0.7s ease-in-out both;
+  -webkit-animation-delay: 0.06s;
+          animation-delay: 0.06s;
+}
+
+.example-4 .buttonFlex .button:hover::after {
   -webkit-transform: translate(5px, -50%);
           transform: translate(5px, -50%);
   opacity: 1;
