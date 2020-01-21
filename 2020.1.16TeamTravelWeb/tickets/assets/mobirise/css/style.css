@@ -18,8 +18,6 @@ html {
   right: 0;
   top: 0;
 }
-
-
 .mbr-parallax-background,
 .mbr-background {
   background-attachment: fixed !important;
@@ -357,7 +355,6 @@ html {
     transition: none;
   }
 }
-
 .mbr-after-navbar:before {
   content: "";
   display: block;
@@ -746,21 +743,7 @@ html {
 .mbr-box {
   display: table;
   width: 100%;
-  height: 1064px;
-
 }
-.topCover::before{
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left:0;
-  width: 100%;
-  height: 100px;
-  z-index: 5;
-  background: linear-gradient(transparent, #ccc);
-}
-
-
 .mbr-box--fixed {
   table-layout: fixed;
 }
@@ -1304,7 +1287,7 @@ html {
   margin: 0 0 13px 10px;
 }
 .mbr-buttons--right.mbr-buttons--only-links {
-  left: 20px;
+  left: 50px;
 }
 .mbr-buttons--activated {
   left: 5px;
