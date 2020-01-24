@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Drum Kit</title>
 
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -69,13 +71,13 @@
     <audio data-key="75" src="./sounds/tom.wav"></audio>
     <audio data-key="76" src="./sounds/tink.wav"></audio>
 
-    <script>
+    <!-- <script>
         function playSound(e) {
-             //找到audio事件
-             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+            //找到audio事件
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
             //找到class="key"事件
             const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-            if(!audio) return //stop the function from running all together
+            if (!audio) return //stop the function from running all together
             audio.currentTime = 0; //rewind to the start
             audio.play();
 
@@ -91,6 +93,26 @@
         const keys = document.querySelectorAll('.key');
         keys.forEach(key => key.addEventListener('transitionend', removeTransition));
         window.addEventListener("keydown", playSound);
+    </script> -->
+
+    <script>
+        var vm = new Vue({
+            el: '.key',
+            methods: {
+                keyDown:() => {
+                    //找到audio事件
+                    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+                    //找到class="key"事件
+                    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+                    if (!audio) return //stop the function from running all together
+                    audio.currentTime = 0 //rewind to the start
+                    audio.play()
+
+                    //針對.key這個元素，添加一個class名為playing的事件
+                    key.classList.add('playing')
+                }
+            },
+        });
     </script>
 </body>
 

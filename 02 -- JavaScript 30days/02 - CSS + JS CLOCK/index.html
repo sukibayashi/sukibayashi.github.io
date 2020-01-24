@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS + JS CLOCK</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="clock">
+        <div class="clock_face">
+            <div class="hand hour_hand"></div>
+            <div class="hand min_hand"></div>
+            <div class="hand seconde_hand"></div>
+        </div>
+    </div>
+
+    <script>
+        const secondeHand = document.querySelector('.seconde_hand');
+        const minHand = document.querySelector('.min_hand');
+        const hourHand = document.querySelector('.hour_hand');
+
+        function setDate() {
+            //用於處理日期和時間、如果沒有指定參數，物件預設值為成聖物件的日期與本地時間
+            //而本地時間是執行JavaScript new Date（）的用戶電腦時間。
+            const now = new Date();
+            const seconds = now.getSeconds();
+            const secondsDegrees = ((seconds / 60) * 360) + 90;
+
+
+            const mins = now.getMinutes();
+            const minsDegrees = (mins / 60) * 360 + 90 + (seconds / 60 / 60) * 360;
+
+
+            const hours = now.getMinutes();
+            const hoursDegrees = 90 + (hours / 12) * 360 + ((mins / 60) / 12) * 360 + (((seconds / 60) / 60) / 12) *
+                360;
+
+            //解决指针跳顿问题【第一种方法】
+            //在发生跳顿的角度值处，将 CSS 的 `transition` 属性去掉
+            if (secondsDegrees === 90) {
+                secondeHand.style.transition = 'all 0s';
+            } else {
+                secondeHand.style.transition = 'all 0.05s';
+            }
+
+            if (minsDegrees === 90) {
+                minHand.style.transition = 'all 0s';
+            } else {
+                minHand.style.transition = 'all 0.1s';
+            }
+
+            secondeHand.style.transform = `rotate(${secondsDegrees}deg)`;
+            minHand.style.transform = `rotate(${minsDegrees}deg)`;
+            hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+        }
+
+        setInterval(setDate, 1000);
+    </script>
+</body>
+
+</html>
